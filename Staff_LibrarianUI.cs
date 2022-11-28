@@ -73,14 +73,12 @@ namespace Capstone
         }
         private void Staff_LibrarianUI_FormClosing(object sender, FormClosingEventArgs e)
         {
-            sqlchk.InactiveAcc(Properties.Settings.Default.loginusername, Properties.Settings.Default.loginpassword);
             Application.Exit();
         }
 
         private void logout_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            sqlchk.InactiveAcc(Properties.Settings.Default.loginusername, Properties.Settings.Default.loginpassword);
             LogInForm lif = new LogInForm();
             lif.Show();
         }

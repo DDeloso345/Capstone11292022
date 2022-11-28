@@ -359,6 +359,10 @@ namespace Capstone
 
         private void insert_btn_Click(object sender, EventArgs e)
         {
+            Random i = new Random();
+            int r = i.Next(10000000, 99999999);
+            uidtxt.Text = "COCPLM" + Convert.ToString(r);
+
             if (uidtxt.Text.Length == 0 || firstnametxt.Text.Length == 0 || middlenametxt.Text.Length == 0 || lastnametxt.Text.Length == 0 || organizationtxt.Text.Length == 0 || addresstxt.Text.Length == 0 || emailtxt.Text.Length == 0 || contactnotxt.Text.Length == 0 || memberstart_txt.Text.Length == 0 || memberend_txt.Text.Length == 0 || imgpathtxt.Text.Length == 0)
             {
                 MessageBox.Show("One or more of the fields have been left blank.\nPlease fill in the blank fields to successfully add a library member account.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

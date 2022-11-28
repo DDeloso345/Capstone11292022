@@ -45,7 +45,7 @@ namespace Capstone
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(SQLConnectionClass.ConnVal("lb_TestDB")))
             {
-                var output = connection.Query<BKBRNotifs>($"select n.NotificationMsg, n.DatePosted, s.Source from bkbr_notif n inner join bkbr_notifsrc s on(n.Source = s.id)").ToList();
+                var output = connection.Query<BKBRNotifs>($"select NotificationMsg, DatePosted from bkbr_notif").ToList();
                 return output;
             }
         }
@@ -60,7 +60,7 @@ namespace Capstone
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(SQLConnectionClass.ConnVal("lb_TestDB")))
             {
-                var output = connection.Query<BKBRNotifs>($"select n.NotificationMsg, n.DatePosted, s.Source from bkbr_notif n inner join bkbr_notifsrc s on(n.Source = s.id)").ToList();
+                var output = connection.Query<BKBRNotifs>($"select NotificationMsg, DatePosted from bkbr_notif").ToList();
                 String str = Convert.ToString(output.Count);
                 return str;
             }

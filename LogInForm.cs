@@ -28,7 +28,6 @@ namespace Capstone
                 Properties.Settings.Default.loginusername = txtbox_username.Text;
                 Properties.Settings.Default.loginpassword = txtbox_password.Text;
                 Properties.Settings.Default.Save();
-                sqlchk.ActiveAcc(txtbox_username.Text, txtbox_password.Text);
                 lib_ui.Show();
             }
             else if (login_staff.Count == 1)
@@ -39,7 +38,6 @@ namespace Capstone
                 Properties.Settings.Default.loginusername = txtbox_username.Text;
                 Properties.Settings.Default.loginpassword = txtbox_password.Text;
                 Properties.Settings.Default.Save();
-                sqlchk.ActiveAcc(txtbox_username.Text, txtbox_password.Text);
                 staffui.Show();
             }
             else if (txtbox_username.Text == String.Empty || txtbox_password.Text == String.Empty)
@@ -91,6 +89,11 @@ namespace Capstone
         private void LogInForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

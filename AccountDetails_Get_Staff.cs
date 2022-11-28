@@ -15,6 +15,5 @@ namespace Capstone
         public String ContactNo { get; set; }
         public String Username { get; set; }
         public String ImgPath { get; set; }
-        public String ActiveStatus { get; set; }
     }
 }

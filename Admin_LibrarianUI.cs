@@ -80,8 +80,6 @@ namespace Capstone
 
         private void LibrarianUI_FormClosing(object sender, FormClosingEventArgs e)
         {
-            sqlchk.InactiveAcc(Properties.Settings.Default.loginusername, Properties.Settings.Default.loginpassword);
-
             Application.Exit();
         }
 
@@ -105,7 +103,6 @@ namespace Capstone
         {
             this.Hide();
             LogInForm lif = new LogInForm();
-            sqlchk.InactiveAcc(Properties.Settings.Default.loginusername, Properties.Settings.Default.loginpassword);
             lif.Show();
         }
 
