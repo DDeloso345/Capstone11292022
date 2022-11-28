@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF24367D-19A3-4EA4-B3EF-DB473B9D625A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Capstone</RootNamespace>
+    <AssemblyName>Capstone</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.WindowsAPICodePack-Core.1.1.0.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ShellExtensions, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountDetails_Get.cs" />
+    <Compile Include="AccountDetails_Get_Member.cs" />
+    <Compile Include="AccountDetails_Get_Staff.cs" />
+    <Compile Include="Admin_Admin_Acc_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Admin_Acc_Management.Designer.cs">
+      <DependentUpon>Admin_Admin_Acc_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_BKBorrowersInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BKBorrowersInfo.Designer.cs">
+      <DependentUpon>Admin_BKBorrowersInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_BKBR_ApprovedNotifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BKBR_ApprovedNotifs.Designer.cs">
+      <DependentUpon>Admin_BKBR_ApprovedNotifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_BookBorrowing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BookBorrowing.Designer.cs">
+      <DependentUpon>Admin_BookBorrowing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_BookInventoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BookInventoryReport.Designer.cs">
+      <DependentUpon>Admin_BookInventoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_BookReturns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BookReturns.Designer.cs">
+      <DependentUpon>Admin_BookReturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BKBR_SelectBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BKBR_SelectBookInfo.Designer.cs">
+      <DependentUpon>BKBR_SelectBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BKBR_SelectStaffUsername.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BKBR_SelectStaffUsername.Designer.cs">
+      <DependentUpon>BKBR_SelectStaffUsername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BKBR_SelectUID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BKBR_SelectUID.Designer.cs">
+      <DependentUpon>BKBR_SelectUID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BKR_SelectBKBR_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BKR_SelectBKBR_Info.Designer.cs">
+      <DependentUpon>BKR_SelectBKBR_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookBorrowingInfo.cs" />
+    <Compile Include="BookReturnsInfo.cs" />
+    <Compile Include="ClientLogbookTables.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientLogbookTables.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClientWalkInLogbookInfo.cs" />
+    <Compile Include="ClientLogbookGraphs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientLogbookGraphs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MemberNotifExpiryDate.cs" />
+    <Compile Include="ModifyClientLogbookDetails_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyClientLogbookDetails_Admin.Designer.cs">
+      <DependentUpon>ModifyClientLogbookDetails_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyClientLogbookDetails_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyClientLogbookDetails_Staff.Designer.cs">
+      <DependentUpon>ModifyClientLogbookDetails_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORHistoryComboboxClass.cs" />
+    <Compile Include="SelectBKINVAuthorInfo_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBKINVAuthorInfo_Admin.Designer.cs">
+      <DependentUpon>SelectBKINVAuthorInfo_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBKINVAuthorInfo_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBKINVAuthorInfo_Staff.Designer.cs">
+      <DependentUpon>SelectBKINVAuthorInfo_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBKINVPublisher_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBKINVPublisher_Admin.Designer.cs">
+      <DependentUpon>SelectBKINVPublisher_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBKINVPublisher_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBKINVPublisher_Staff.Designer.cs">
+      <DependentUpon>SelectBKINVPublisher_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBKINVSource_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBKINVSource_Admin.Designer.cs">
+      <DependentUpon>SelectBKINVSource_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBKINVSource_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBKINVSource_Staff.Designer.cs">
+      <DependentUpon>SelectBKINVSource_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectOrganization_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectOrganization_Admin.Designer.cs">
+      <DependentUpon>SelectOrganization_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectOrganization_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectOrganization_Staff.Designer.cs">
+      <DependentUpon>SelectOrganization_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLBKBorrowerInfoCommands.cs" />
+    <Compile Include="SQLBookBorrowingCommands.cs" />
+    <Compile Include="SQLBookInventoryCommandsClass.cs" />
+    <Compile Include="Admin_ClientLogbookReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ClientLogbookReport.Designer.cs">
+      <DependentUpon>Admin_ClientLogbookReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_MemberBorrowedBooksReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_MemberBorrowedBooksReport.Designer.cs">
+      <DependentUpon>Admin_MemberBorrowedBooksReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_MembershipFrequencyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_MembershipFrequencyReport.Designer.cs">
+      <DependentUpon>Admin_MembershipFrequencyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Member_Account_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Member_Account_Management.Designer.cs">
+      <DependentUpon>Admin_Member_Account_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Staff_Acc_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Staff_Acc_Management.Designer.cs">
+      <DependentUpon>Admin_Staff_Acc_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DashboardUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DashboardUI.Designer.cs">
+      <DependentUpon>Admin_DashboardUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_BackupAndRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BackupAndRestore.Designer.cs">
+      <DependentUpon>Admin_BackupAndRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BKINV_DBRecords.cs" />
+    <Compile Include="Admin_BookInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BookInventory.Designer.cs">
+      <DependentUpon>Admin_BookInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDataAccess.cs" />
+    <Compile Include="InsertORNoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertORNoForm.Designer.cs">
+      <DependentUpon>InsertORNoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInCredentialsDataAccess.cs" />
+    <Compile Include="MemberIDPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberIDPreview.Designer.cs">
+      <DependentUpon>MemberIDPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORHistory.Designer.cs">
+      <DependentUpon>ORHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORHistoryClass.cs" />
+    <Compile Include="ORHistoryStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORHistoryStaff.Designer.cs">
+      <DependentUpon>ORHistoryStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShelfListCardPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShelfListCardPreview.Designer.cs">
+      <DependentUpon>ShelfListCardPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLAccountManagementCommands.cs" />
+    <Compile Include="SQLAdminCommandsClass.cs" />
+    <Compile Include="SQLBookReturnsCommands.cs" />
+    <Compile Include="SQLCheckActiveInactiveCommands.cs" />
+    <Compile Include="SQLClientLogbookCommands.cs" />
+    <Compile Include="SQLCommandsInsertORNumber.cs" />
+    <Compile Include="SQLCommandsModifyORHistory.cs" />
+    <Compile Include="SQLIDPreviewCommandsClass.cs" />
+    <Compile Include="SQLProcessMemberInfoCommands.cs" />
+    <Compile Include="SQLStaffCommandsClass.cs" />
+    <Compile Include="Staff_BackupAndRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BackupAndRestore.Designer.cs">
+      <DependentUpon>Staff_BackupAndRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_BKBorrowersInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BKBorrowersInfo.Designer.cs">
+      <DependentUpon>Staff_BKBorrowersInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_BKBR_ApprovedNotifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BKBR_ApprovedNotifs.Designer.cs">
+      <DependentUpon>Staff_BKBR_ApprovedNotifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_BookBorrowing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BookBorrowing.Designer.cs">
+      <DependentUpon>Staff_BookBorrowing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_BookInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BookInventory.Designer.cs">
+      <DependentUpon>Staff_BookInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_BookInventoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BookInventoryReport.Designer.cs">
+      <DependentUpon>Staff_BookInventoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_BookReturns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_BookReturns.Designer.cs">
+      <DependentUpon>Staff_BookReturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ClientLogbookReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_ClientLogbookReport.Designer.cs">
+      <DependentUpon>Staff_ClientLogbookReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_LibrarianUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_LibrarianUI.Designer.cs">
+      <DependentUpon>Staff_LibrarianUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_LibrarianUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_LibrarianUI.Designer.cs">
+      <DependentUpon>Admin_LibrarianUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInCredentials.cs" />
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLBackupAndRestoreCommandsClass.cs" />
+    <Compile Include="SQLConnectionClass.cs" />
+    <Compile Include="Staff_DashboardUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_DashboardUI.Designer.cs">
+      <DependentUpon>Staff_DashboardUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Librarian_Account_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Librarian_Account_Management.Designer.cs">
+      <DependentUpon>Staff_Librarian_Account_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_MemberBorrowedBooksReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_MemberBorrowedBooksReport.Designer.cs">
+      <DependentUpon>Staff_MemberBorrowedBooksReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_MembershipFrequencyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_MembershipFrequencyReport.Designer.cs">
+      <DependentUpon>Staff_MembershipFrequencyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Member_Account_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Member_Account_Management.Designer.cs">
+      <DependentUpon>Staff_Member_Account_Management.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Admin_Acc_Management.resx">
+      <DependentUpon>Admin_Admin_Acc_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BKBorrowersInfo.resx">
+      <DependentUpon>Admin_BKBorrowersInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BKBR_ApprovedNotifs.resx">
+      <DependentUpon>Admin_BKBR_ApprovedNotifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BookBorrowing.resx">
+      <DependentUpon>Admin_BookBorrowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BookInventoryReport.resx">
+      <DependentUpon>Admin_BookInventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BookReturns.resx">
+      <DependentUpon>Admin_BookReturns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ClientLogbookReport.resx">
+      <DependentUpon>Admin_ClientLogbookReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DashboardUI.resx">
+      <DependentUpon>Admin_DashboardUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BackupAndRestore.resx">
+      <DependentUpon>Admin_BackupAndRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_BookInventory.resx">
+      <DependentUpon>Admin_BookInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_MemberBorrowedBooksReport.resx">
+      <DependentUpon>Admin_MemberBorrowedBooksReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_MembershipFrequencyReport.resx">
+      <DependentUpon>Admin_MembershipFrequencyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Member_Account_Management.resx">
+      <DependentUpon>Admin_Member_Account_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Staff_Acc_Management.resx">
+      <DependentUpon>Admin_Staff_Acc_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BKBR_SelectBookInfo.resx">
+      <DependentUpon>BKBR_SelectBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BKBR_SelectStaffUsername.resx">
+      <DependentUpon>BKBR_SelectStaffUsername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BKBR_SelectUID.resx">
+      <DependentUpon>BKBR_SelectUID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BKR_SelectBKBR_Info.resx">
+      <DependentUpon>BKR_SelectBKBR_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientLogbookGraphs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientLogbookGraphs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientLogbookTables.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientLogbookTables.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertORNoForm.resx">
+      <DependentUpon>InsertORNoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberIDPreview.resx">
+      <DependentUpon>MemberIDPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyClientLogbookDetails_Admin.resx">
+      <DependentUpon>ModifyClientLogbookDetails_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyClientLogbookDetails_Staff.resx">
+      <DependentUpon>ModifyClientLogbookDetails_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORHistory.resx">
+      <DependentUpon>ORHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORHistoryStaff.resx">
+      <DependentUpon>ORHistoryStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBKINVAuthorInfo_Admin.resx">
+      <DependentUpon>SelectBKINVAuthorInfo_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBKINVAuthorInfo_Staff.resx">
+      <DependentUpon>SelectBKINVAuthorInfo_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBKINVPublisher_Admin.resx">
+      <DependentUpon>SelectBKINVPublisher_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBKINVPublisher_Staff.resx">
+      <DependentUpon>SelectBKINVPublisher_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBKINVSource_Admin.resx">
+      <DependentUpon>SelectBKINVSource_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBKINVSource_Staff.resx">
+      <DependentUpon>SelectBKINVSource_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectOrganization_Admin.resx">
+      <DependentUpon>SelectOrganization_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectOrganization_Staff.resx">
+      <DependentUpon>SelectOrganization_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShelfListCardPreview.resx">
+      <DependentUpon>ShelfListCardPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BackupAndRestore.resx">
+      <DependentUpon>Staff_BackupAndRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BKBorrowersInfo.resx">
+      <DependentUpon>Staff_BKBorrowersInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BKBR_ApprovedNotifs.resx">
+      <DependentUpon>Staff_BKBR_ApprovedNotifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BookBorrowing.resx">
+      <DependentUpon>Staff_BookBorrowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BookInventory.resx">
+      <DependentUpon>Staff_BookInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BookInventoryReport.resx">
+      <DependentUpon>Staff_BookInventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_BookReturns.resx">
+      <DependentUpon>Staff_BookReturns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_ClientLogbookReport.resx">
+      <DependentUpon>Staff_ClientLogbookReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_LibrarianUI.resx">
+      <DependentUpon>Staff_LibrarianUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_LibrarianUI.resx">
+      <DependentUpon>Admin_LibrarianUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Staff_DashboardUI.resx">
+      <DependentUpon>Staff_DashboardUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Librarian_Account_Management.resx">
+      <DependentUpon>Staff_Librarian_Account_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_MemberBorrowedBooksReport.resx">
+      <DependentUpon>Staff_MemberBorrowedBooksReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_MembershipFrequencyReport.resx">
+      <DependentUpon>Staff_MembershipFrequencyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Member_Account_Management.resx">
+      <DependentUpon>Staff_Member_Account_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acrylic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cagayan_de_Oro_official_seal%252C_2014.png__77847__thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Icons\downicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-107349823.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-1073498231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Icons\2757.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_85138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\150361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2851439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kindpng_3286450.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2851439 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1468450-200.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,210 @@
+C:\Users\User\source\repos\Capstone\bin\Debug\Capstone.exe.config
+C:\Users\User\source\repos\Capstone\bin\Debug\Capstone.exe
+C:\Users\User\source\repos\Capstone\bin\Debug\Capstone.pdb
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Properties.Resources.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.exe
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.pdb
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.LogInForm.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_DashboardUI.resources
+C:\Users\User\source\repos\Capstone\bin\Debug\Dapper.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\Dapper.xml
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\User\source\repos\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\User\source\repos\Capstone\bin\Debug\stdole.dll
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_BackupAndRestore.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_BookInventory.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_DashboardUI.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_LibrarianUI.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_LibrarianUI.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_BackupAndRestore.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_Admin_Acc_Management.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_Member_Account_Management.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_Librarian_Account_Management.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_Member_Account_Management.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_Staff_Acc_Management.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.InsertORNoForm.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.MemberIDPreview.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.ORHistory.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_Book_Inventory_Report.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.ShelfListCardPreview.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_BookInventoryReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_ClientLogbookReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_MemberBorrowedBooksReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Admin_MembershipFrequencyReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_ClientLogbookReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_MemberBorrowedBooksReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.Staff_MembershipFrequencyReport.resources
+C:\Users\User\source\repos\Capstone\obj\Debug\Capstone.ORHistoryStaff.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Capstone.exe.config
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Capstone.exe
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Capstone.pdb
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Dapper.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\stdole.dll
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Dapper.xml
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.xml
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+D:\Downloads\Capstone 10-3-2022\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.csproj.AssemblyReference.cache
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.csproj.SuggestedBindingRedirects.cache
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_Admin_Acc_Management.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_BookInventoryReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_ClientLogbookReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_DashboardUI.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_BackupAndRestore.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_BookInventory.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_MemberBorrowedBooksReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_MembershipFrequencyReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_Member_Account_Management.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_Staff_Acc_Management.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.InsertORNoForm.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.MemberIDPreview.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.ORHistory.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.ORHistoryStaff.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.ShelfListCardPreview.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_BackupAndRestore.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_Book_Inventory_Report.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_ClientLogbookReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_LibrarianUI.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Admin_LibrarianUI.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.LogInForm.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Properties.Resources.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_DashboardUI.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_Librarian_Account_Management.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_MemberBorrowedBooksReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_MembershipFrequencyReport.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.Staff_Member_Account_Management.resources
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.csproj.CopyComplete
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.exe
+D:\Downloads\Capstone 10-3-2022\Capstone\obj\Debug\Capstone.pdb
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_Admin_Acc_Management.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BookInventoryReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_ClientLogbookReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_DashboardUI.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BackupAndRestore.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BookInventory.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_MemberBorrowedBooksReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_MembershipFrequencyReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_Member_Account_Management.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_Staff_Acc_Management.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.InsertORNoForm.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.MemberIDPreview.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.ORHistory.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.ORHistoryStaff.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.ShelfListCardPreview.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_BackupAndRestore.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_Book_Inventory_Report.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_ClientLogbookReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_LibrarianUI.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_LibrarianUI.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.LogInForm.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Properties.Resources.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_DashboardUI.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_Librarian_Account_Management.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_MemberBorrowedBooksReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_MembershipFrequencyReport.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_Member_Account_Management.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.exe
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.pdb
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Capstone.exe.config
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Capstone.exe
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Capstone.pdb
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Dapper.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\stdole.dll
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Dapper.xml
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BookBorrowing.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BookReturns.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_BookBorrowing.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_BookReturns.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_BookInventory.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BKBR_ApprovedNotifs.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_BKBR_ApprovedNotifs.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Admin_BKBorrowersInfo.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.Staff_BKBorrowersInfo.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectOrganization_Admin.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectOrganization_Staff.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectBKINVAuthorInfo_Admin.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectBKINVAuthorInfo_Staff.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectBKINVPublisher_Admin.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectBKINVPublisher_Staff.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectBKINVSource_Admin.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.SelectBKINVSource_Staff.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.BKBR_SelectBookInfo.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.BKBR_SelectStaffUsername.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.BKBR_SelectUID.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.BKR_SelectBKBR_Info.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.ModifyClientLogbookDetails_Admin.resources
+C:\Users\User\source\repos\10-08-2022 Capstone\Capstone\obj\Debug\Capstone.ModifyClientLogbookDetails_Staff.resources
