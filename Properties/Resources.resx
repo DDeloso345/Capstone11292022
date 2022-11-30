@@ -118,20 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-1073498231" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-1073498231.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="acrylic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\acrylic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="acrylic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\acrylic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="downicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Icons\downicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cagayan_de_Oro_official_seal%2C_2014.png__77847__thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cagayan_de_Oro_official_seal%2C_2014.png__77847__thumb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="noun_85138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noun_85138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-107349823" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-107349823.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,22 +127,37 @@
   <data name="2757" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Icons\2757.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngwing_com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="kindpng_3286450" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kindpng_3286450.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="noun_85138" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noun_85138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cagayan_de_Oro_official_seal%2C_2014.png__77847__thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cagayan_de_Oro_official_seal%2C_2014.png__77847__thumb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_1468450_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1468450-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="downicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\downicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2851439__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2851439 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acrylic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acrylic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_150361" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\150361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_2851439__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2851439 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="acrylic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acrylic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-1073498231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\illustration-exclamation-mark-red-icon-exclamation-mark-red-icon-1073498231.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngwing_com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1468450_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1468450-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_1294426_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_1294426_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -136,9 +136,10 @@ namespace Capstone
             openChildForm(new Admin_BookReturns());
         }
 
+        // REPORTS
         private void BookInvReport_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Reports.BookInventory.View_BookInventory());
         }
 
         private void BorrowedBooksReport_Click(object sender, EventArgs e)
@@ -153,7 +154,7 @@ namespace Capstone
 
         private void ClientLogbookReport_Click(object sender, EventArgs e)
         {
-             
+
         }
     }
 }

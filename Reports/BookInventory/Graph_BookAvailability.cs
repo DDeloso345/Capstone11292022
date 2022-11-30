@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Capstone {
+namespace Capstone.Reports.BookInventory {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace Capstone {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ClientLogbookTables : ReportClass {
+    public class Graph_BookAvailability : ReportClass {
         
-        public ClientLogbookTables() {
+        public Graph_BookAvailability() {
         }
         
         public override string ResourceName {
             get {
-                return "ClientLogbookTables.rpt";
+                return "Graph_BookAvailability.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Capstone {
         
         public override string FullResourceName {
             get {
-                return "Capstone.ClientLogbookTables.rpt";
+                return "Capstone.Reports.BookInventory.Graph_BookAvailability.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace Capstone {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedClientLogbookTables : Component, ICachedReport {
+    public class CachedGraph_BookAvailability : Component, ICachedReport {
         
-        public CachedClientLogbookTables() {
+        public CachedGraph_BookAvailability() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace Capstone {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ClientLogbookTables rpt = new ClientLogbookTables();
+            Graph_BookAvailability rpt = new Graph_BookAvailability();
             rpt.Site = this.Site;
             return rpt;
         }

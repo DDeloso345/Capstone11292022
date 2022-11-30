@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Set_Reports" targetNamespace="http://tempuri.org/Set_Reports.xsd" xmlns:mstns="http://tempuri.org/Set_Reports.xsd" xmlns="http://tempuri.org/Set_Reports.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Set_Reports" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Set_Reports" msprop:Generator_UserDSName="Set_Reports">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table_MissingBooks" msprop:Generator_TableClassName="Table_MissingBooksDataTable" msprop:Generator_TableVarName="tableTable_MissingBooks" msprop:Generator_RowChangedName="Table_MissingBooksRowChanged" msprop:Generator_TablePropName="Table_MissingBooks" msprop:Generator_RowDeletingName="Table_MissingBooksRowDeleting" msprop:Generator_RowChangingName="Table_MissingBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_MissingBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_MissingBooksRowDeleted" msprop:Generator_RowClassName="Table_MissingBooksRow" msprop:Generator_UserTableName="Table_MissingBooks" msprop:Generator_RowEvArgName="Table_MissingBooksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Accession_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnAccession_Number" msprop:Generator_ColumnPropNameInRow="Accession_Number" msprop:Generator_ColumnPropNameInTable="Accession_NumberColumn" msprop:Generator_UserColumnName="Accession Number" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Title" msprop:Generator_ColumnVarNameInTable="columnBook_Title" msprop:Generator_ColumnPropNameInRow="Book_Title" msprop:Generator_ColumnPropNameInTable="Book_TitleColumn" msprop:Generator_UserColumnName="Book Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Author" msprop:Generator_ColumnVarNameInTable="columnBook_Author" msprop:Generator_ColumnPropNameInRow="Book_Author" msprop:Generator_ColumnPropNameInTable="Book_AuthorColumn" msprop:Generator_UserColumnName="Book Author" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_x0020_Acquired" msprop:Generator_ColumnVarNameInTable="columnDate_Acquired" msprop:Generator_ColumnPropNameInRow="Date_Acquired" msprop:Generator_ColumnPropNameInTable="Date_AcquiredColumn" msprop:Generator_UserColumnName="Date Acquired" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_AvailableBooks" msprop:Generator_TableClassName="Table_AvailableBooksDataTable" msprop:Generator_TableVarName="tableTable_AvailableBooks" msprop:Generator_RowChangedName="Table_AvailableBooksRowChanged" msprop:Generator_TablePropName="Table_AvailableBooks" msprop:Generator_RowDeletingName="Table_AvailableBooksRowDeleting" msprop:Generator_RowChangingName="Table_AvailableBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_AvailableBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_AvailableBooksRowDeleted" msprop:Generator_RowClassName="Table_AvailableBooksRow" msprop:Generator_UserTableName="Table_AvailableBooks" msprop:Generator_RowEvArgName="Table_AvailableBooksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Accession_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnAccession_Number" msprop:Generator_ColumnPropNameInRow="Accession_Number" msprop:Generator_ColumnPropNameInTable="Accession_NumberColumn" msprop:Generator_UserColumnName="Accession Number" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Title" msprop:Generator_ColumnVarNameInTable="columnBook_Title" msprop:Generator_ColumnPropNameInRow="Book_Title" msprop:Generator_ColumnPropNameInTable="Book_TitleColumn" msprop:Generator_UserColumnName="Book Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Author" msprop:Generator_ColumnVarNameInTable="columnBook_Author" msprop:Generator_ColumnPropNameInRow="Book_Author" msprop:Generator_ColumnPropNameInTable="Book_AuthorColumn" msprop:Generator_UserColumnName="Book Author" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_x0020_Acquired" msprop:Generator_ColumnVarNameInTable="columnDate_Acquired" msprop:Generator_ColumnPropNameInRow="Date_Acquired" msprop:Generator_ColumnPropNameInTable="Date_AcquiredColumn" msprop:Generator_UserColumnName="Date Acquired" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_DiscardedBooks" msprop:Generator_TableClassName="Table_DiscardedBooksDataTable" msprop:Generator_TableVarName="tableTable_DiscardedBooks" msprop:Generator_RowChangedName="Table_DiscardedBooksRowChanged" msprop:Generator_TablePropName="Table_DiscardedBooks" msprop:Generator_RowDeletingName="Table_DiscardedBooksRowDeleting" msprop:Generator_RowChangingName="Table_DiscardedBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_DiscardedBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_DiscardedBooksRowDeleted" msprop:Generator_RowClassName="Table_DiscardedBooksRow" msprop:Generator_UserTableName="Table_DiscardedBooks" msprop:Generator_RowEvArgName="Table_DiscardedBooksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Accession_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnAccession_Number" msprop:Generator_ColumnPropNameInRow="Accession_Number" msprop:Generator_ColumnPropNameInTable="Accession_NumberColumn" msprop:Generator_UserColumnName="Accession Number" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Title" msprop:Generator_ColumnVarNameInTable="columnBook_Title" msprop:Generator_ColumnPropNameInRow="Book_Title" msprop:Generator_ColumnPropNameInTable="Book_TitleColumn" msprop:Generator_UserColumnName="Book Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Author" msprop:Generator_ColumnVarNameInTable="columnBook_Author" msprop:Generator_ColumnPropNameInRow="Book_Author" msprop:Generator_ColumnPropNameInTable="Book_AuthorColumn" msprop:Generator_UserColumnName="Book Author" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_x0020_Acquired" msprop:Generator_ColumnVarNameInTable="columnDate_Acquired" msprop:Generator_ColumnPropNameInRow="Date_Acquired" msprop:Generator_ColumnPropNameInTable="Date_AcquiredColumn" msprop:Generator_UserColumnName="Date Acquired" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_BorrowedBooks" msprop:Generator_TableClassName="Table_BorrowedBooksDataTable" msprop:Generator_TableVarName="tableTable_BorrowedBooks" msprop:Generator_RowChangedName="Table_BorrowedBooksRowChanged" msprop:Generator_TablePropName="Table_BorrowedBooks" msprop:Generator_RowDeletingName="Table_BorrowedBooksRowDeleting" msprop:Generator_RowChangingName="Table_BorrowedBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_BorrowedBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_BorrowedBooksRowDeleted" msprop:Generator_RowClassName="Table_BorrowedBooksRow" msprop:Generator_UserTableName="Table_BorrowedBooks" msprop:Generator_RowEvArgName="Table_BorrowedBooksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Accession_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnAccession_Number" msprop:Generator_ColumnPropNameInRow="Accession_Number" msprop:Generator_ColumnPropNameInTable="Accession_NumberColumn" msprop:Generator_UserColumnName="Accession Number" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Title" msprop:Generator_ColumnVarNameInTable="columnBook_Title" msprop:Generator_ColumnPropNameInRow="Book_Title" msprop:Generator_ColumnPropNameInTable="Book_TitleColumn" msprop:Generator_UserColumnName="Book Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Book_x0020_Author" msprop:Generator_ColumnVarNameInTable="columnBook_Author" msprop:Generator_ColumnPropNameInRow="Book_Author" msprop:Generator_ColumnPropNameInTable="Book_AuthorColumn" msprop:Generator_UserColumnName="Book Author" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_x0020_Acquired" msprop:Generator_ColumnVarNameInTable="columnDate_Acquired" msprop:Generator_ColumnPropNameInRow="Date_Acquired" msprop:Generator_ColumnPropNameInTable="Date_AcquiredColumn" msprop:Generator_UserColumnName="Date Acquired" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_BookStatus" msprop:Generator_TableClassName="Table_BookStatusDataTable" msprop:Generator_TableVarName="tableTable_BookStatus" msprop:Generator_TablePropName="Table_BookStatus" msprop:Generator_RowDeletingName="Table_BookStatusRowDeleting" msprop:Generator_RowChangingName="Table_BookStatusRowChanging" msprop:Generator_RowEvHandlerName="Table_BookStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_BookStatusRowDeleted" msprop:Generator_UserTableName="Table_BookStatus" msprop:Generator_RowChangedName="Table_BookStatusRowChanged" msprop:Generator_RowEvArgName="Table_BookStatusRowChangeEvent" msprop:Generator_RowClassName="Table_BookStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_x0020_Books" msprop:Generator_ColumnVarNameInTable="columnTotal_Books" msprop:Generator_ColumnPropNameInRow="Total_Books" msprop:Generator_ColumnPropNameInTable="Total_BooksColumn" msprop:Generator_UserColumnName="Total Books" type="xs:string" minOccurs="0" />
+              <xs:element name="Availability" msprop:Generator_ColumnVarNameInTable="columnAvailability" msprop:Generator_ColumnPropNameInRow="Availability" msprop:Generator_ColumnPropNameInTable="AvailabilityColumn" msprop:Generator_UserColumnName="Availability" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_TotalOpenBooks" msprop:Generator_TableClassName="Table_TotalOpenBooksDataTable" msprop:Generator_TableVarName="tableTable_TotalOpenBooks" msprop:Generator_TablePropName="Table_TotalOpenBooks" msprop:Generator_RowDeletingName="Table_TotalOpenBooksRowDeleting" msprop:Generator_RowChangingName="Table_TotalOpenBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_TotalOpenBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_TotalOpenBooksRowDeleted" msprop:Generator_UserTableName="Table_TotalOpenBooks" msprop:Generator_RowChangedName="Table_TotalOpenBooksRowChanged" msprop:Generator_RowEvArgName="Table_TotalOpenBooksRowChangeEvent" msprop:Generator_RowClassName="Table_TotalOpenBooksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_x0020_Books" msprop:Generator_ColumnVarNameInTable="columnTotal_Books" msprop:Generator_ColumnPropNameInRow="Total_Books" msprop:Generator_ColumnPropNameInTable="Total_BooksColumn" msprop:Generator_UserColumnName="Total Books" type="xs:string" minOccurs="0" />
+              <xs:element name="Availability" msprop:Generator_ColumnVarNameInTable="columnAvailability" msprop:Generator_ColumnPropNameInRow="Availability" msprop:Generator_ColumnPropNameInTable="AvailabilityColumn" msprop:Generator_UserColumnName="Availability" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_TotalInsideBooks" msprop:Generator_TableClassName="Table_TotalInsideBooksDataTable" msprop:Generator_TableVarName="tableTable_TotalInsideBooks" msprop:Generator_TablePropName="Table_TotalInsideBooks" msprop:Generator_RowDeletingName="Table_TotalInsideBooksRowDeleting" msprop:Generator_RowChangingName="Table_TotalInsideBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_TotalInsideBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_TotalInsideBooksRowDeleted" msprop:Generator_UserTableName="Table_TotalInsideBooks" msprop:Generator_RowChangedName="Table_TotalInsideBooksRowChanged" msprop:Generator_RowEvArgName="Table_TotalInsideBooksRowChangeEvent" msprop:Generator_RowClassName="Table_TotalInsideBooksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_x0020_Books" msprop:Generator_ColumnVarNameInTable="columnTotal_Books" msprop:Generator_ColumnPropNameInRow="Total_Books" msprop:Generator_ColumnPropNameInTable="Total_BooksColumn" msprop:Generator_UserColumnName="Total Books" type="xs:string" minOccurs="0" />
+              <xs:element name="Availability" msprop:Generator_ColumnVarNameInTable="columnAvailability" msprop:Generator_ColumnPropNameInRow="Availability" msprop:Generator_ColumnPropNameInTable="AvailabilityColumn" msprop:Generator_UserColumnName="Availability" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_TotalBorrowedBooks" msprop:Generator_TableClassName="Table_TotalBorrowedBooksDataTable" msprop:Generator_TableVarName="tableTable_TotalBorrowedBooks" msprop:Generator_TablePropName="Table_TotalBorrowedBooks" msprop:Generator_RowDeletingName="Table_TotalBorrowedBooksRowDeleting" msprop:Generator_RowChangingName="Table_TotalBorrowedBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_TotalBorrowedBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_TotalBorrowedBooksRowDeleted" msprop:Generator_UserTableName="Table_TotalBorrowedBooks" msprop:Generator_RowChangedName="Table_TotalBorrowedBooksRowChanged" msprop:Generator_RowEvArgName="Table_TotalBorrowedBooksRowChangeEvent" msprop:Generator_RowClassName="Table_TotalBorrowedBooksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_x0020_Books" msprop:Generator_ColumnVarNameInTable="columnTotal_Books" msprop:Generator_ColumnPropNameInRow="Total_Books" msprop:Generator_ColumnPropNameInTable="Total_BooksColumn" msprop:Generator_UserColumnName="Total Books" type="xs:string" minOccurs="0" />
+              <xs:element name="Availability" msprop:Generator_ColumnVarNameInTable="columnAvailability" msprop:Generator_ColumnPropNameInRow="Availability" msprop:Generator_ColumnPropNameInTable="AvailabilityColumn" msprop:Generator_UserColumnName="Availability" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_TotalDiscardedBooks" msprop:Generator_TableClassName="Table_TotalDiscardedBooksDataTable" msprop:Generator_TableVarName="tableTable_TotalDiscardedBooks" msprop:Generator_TablePropName="Table_TotalDiscardedBooks" msprop:Generator_RowDeletingName="Table_TotalDiscardedBooksRowDeleting" msprop:Generator_RowChangingName="Table_TotalDiscardedBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_TotalDiscardedBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_TotalDiscardedBooksRowDeleted" msprop:Generator_UserTableName="Table_TotalDiscardedBooks" msprop:Generator_RowChangedName="Table_TotalDiscardedBooksRowChanged" msprop:Generator_RowEvArgName="Table_TotalDiscardedBooksRowChangeEvent" msprop:Generator_RowClassName="Table_TotalDiscardedBooksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_x0020_Books" msprop:Generator_ColumnVarNameInTable="columnTotal_Books" msprop:Generator_ColumnPropNameInRow="Total_Books" msprop:Generator_ColumnPropNameInTable="Total_BooksColumn" msprop:Generator_UserColumnName="Total Books" type="xs:string" minOccurs="0" />
+              <xs:element name="Availability" msprop:Generator_ColumnVarNameInTable="columnAvailability" msprop:Generator_ColumnPropNameInRow="Availability" msprop:Generator_ColumnPropNameInTable="AvailabilityColumn" msprop:Generator_UserColumnName="Availability" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_TotalMissingBooks" msprop:Generator_TableClassName="Table_TotalMissingBooksDataTable" msprop:Generator_TableVarName="tableTable_TotalMissingBooks" msprop:Generator_TablePropName="Table_TotalMissingBooks" msprop:Generator_RowDeletingName="Table_TotalMissingBooksRowDeleting" msprop:Generator_RowChangingName="Table_TotalMissingBooksRowChanging" msprop:Generator_RowEvHandlerName="Table_TotalMissingBooksRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_TotalMissingBooksRowDeleted" msprop:Generator_UserTableName="Table_TotalMissingBooks" msprop:Generator_RowChangedName="Table_TotalMissingBooksRowChanged" msprop:Generator_RowEvArgName="Table_TotalMissingBooksRowChangeEvent" msprop:Generator_RowClassName="Table_TotalMissingBooksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_x0020_Books" msprop:Generator_ColumnVarNameInTable="columnTotal_Books" msprop:Generator_ColumnPropNameInRow="Total_Books" msprop:Generator_ColumnPropNameInTable="Total_BooksColumn" msprop:Generator_UserColumnName="Total Books" type="xs:string" minOccurs="0" />
+              <xs:element name="Availability" msprop:Generator_ColumnVarNameInTable="columnAvailability" msprop:Generator_ColumnPropNameInRow="Availability" msprop:Generator_ColumnPropNameInTable="AvailabilityColumn" msprop:Generator_UserColumnName="Availability" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_Narrative" msprop:Generator_TableClassName="Table_NarrativeDataTable" msprop:Generator_TableVarName="tableTable_Narrative" msprop:Generator_RowChangedName="Table_NarrativeRowChanged" msprop:Generator_TablePropName="Table_Narrative" msprop:Generator_RowDeletingName="Table_NarrativeRowDeleting" msprop:Generator_RowChangingName="Table_NarrativeRowChanging" msprop:Generator_RowEvHandlerName="Table_NarrativeRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_NarrativeRowDeleted" msprop:Generator_RowClassName="Table_NarrativeRow" msprop:Generator_UserTableName="Table_Narrative" msprop:Generator_RowEvArgName="Table_NarrativeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Narrative" msprop:Generator_ColumnVarNameInTable="columnNarrative" msprop:Generator_ColumnPropNameInRow="Narrative" msprop:Generator_ColumnPropNameInTable="NarrativeColumn" msprop:Generator_UserColumnName="Narrative" type="xs:string" minOccurs="0" />
+              <xs:element name="Current_x0020_Year" msprop:Generator_ColumnVarNameInTable="columnCurrent_Year" msprop:Generator_ColumnPropNameInRow="Current_Year" msprop:Generator_ColumnPropNameInTable="Current_YearColumn" msprop:Generator_UserColumnName="Current Year" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

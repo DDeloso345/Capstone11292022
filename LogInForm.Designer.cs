@@ -149,7 +149,6 @@ namespace Capstone
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log-in Form";
-            this.Load += new System.EventHandler(this.LogInForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LogInForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
