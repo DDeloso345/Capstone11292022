@@ -74,11 +74,11 @@ namespace Capstone
         }
 
 
-        public void Insert(string firstname, string middlename, string lastname, string suffix, string position, string hieararchy, string email, string contactno, string username, string password, string imgpath, String activest)
+        public void Insert(string firstname, string middlename, string lastname, string suffix, string position, string hieararchy, string email, string contactno, string username, string password, string imgpath)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(SQLConnectionClass.ConnVal("lb_TestDB")))
             {
-                var output = connection.Execute($"insert into emp_info_main values ('{firstname}', '{middlename}','{lastname}','{suffix}','{position}', '{hieararchy}', '{email}','{contactno}','{username}', '{password}', '{imgpath}', '{activest}')");
+                var output = connection.Execute($"insert into emp_info_main values ('{firstname}', '{middlename}','{lastname}','{suffix}','{position}', '{hieararchy}', '{email}','{contactno}','{username}', '{password}', '{imgpath}')");
                 MessageBox.Show("The specified account has now been added to the database.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -137,11 +137,16 @@ namespace Capstone
             {
                 try
                 {
-                    var output = connection.Execute($"update emp_info_main set FirstName = '{fname}', MiddleName = '{mname}', LastName = '{lname}', Suffix = '{suffix}', Position = '{position}', EmpRoles = '{hierlvl}', EMailAddress = '{email}', ContactNo = '{number}', Username = '{username}', password = '{password}', ImgPath = '{imgpath}', ActiveStatus = '{activest}' where id = '{id}'");
+                    var com = connection.Query<AccountDetails_Get>($"select *from emp_info_main where Username = '{username}'").ToList();
+                    if (com.Count > 1) {
+                        MessageBox.Show("The specified username is already taken. Please choose another username.");
+                    }
+                    var output = connection.Execute($"update emp_info_main set FirstName = '{fname}', MiddleName = '{mname}', LastName = '{lname}', Suffix = '{suffix}', Position = '{position}', EmpRoles = '{hierlvl}', EMailAddress = '{email}', ContactNo = '{number}', Username = '{username}', password = '{password}', ImgPath = '{imgpath}' where id = '{id}'");
                     MessageBox.Show("The specified account has been successfully updated.");
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+
                     MessageBox.Show("Please select a record from the table provided.");
                 }
             }

@@ -177,21 +177,21 @@ namespace Capstone
                                         if (suffixtxt.Text.Equals("N/A"))
                                         {
                                             sfx = "1";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Sr."))
                                         {
                                             sfx = "2";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Jr."))
                                         {
                                             sfx = "3";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
@@ -221,21 +221,21 @@ namespace Capstone
                                         if (suffixtxt.Text.Equals("N/A"))
                                         {
                                             sfx = "1";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Sr."))
                                         {
                                             sfx = "2";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Jr."))
                                         {
                                             sfx = "3";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
@@ -269,21 +269,21 @@ namespace Capstone
                                         if (suffixtxt.Text.Equals("N/A"))
                                         {
                                             sfx = "1";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Sr."))
                                         {
                                             sfx = "2";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Jr."))
                                         {
                                             sfx = "3";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
@@ -313,21 +313,21 @@ namespace Capstone
                                         if (suffixtxt.Text.Equals("N/A"))
                                         {
                                             sfx = "1";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Sr."))
                                         {
                                             sfx = "2";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
                                         else if (suffixtxt.Text.Equals("Jr."))
                                         {
                                             sfx = "3";
-                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text, "2");
+                                            acc_cmd.Insert(firstnametxt.Text, middlenametxt.Text, lastnametxt.Text, sfx, pos, hier, emailtxt.Text, contactnotxt.Text, usernametxt.Text, passwordtxt.Text, imgpathtxt.Text);
                                             clear();
                                             UpdateBinding();
                                         }
