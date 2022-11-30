@@ -62,9 +62,6 @@ namespace Capstone
             this.curr_availbk = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.month_bkbr = new System.Windows.Forms.Label();
             this.totalbkbr = new System.Windows.Forms.Label();
@@ -82,8 +79,6 @@ namespace Capstone
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profimg)).BeginInit();
@@ -237,7 +232,6 @@ namespace Capstone
             this.dashboard_pnl.Controls.Add(this.panel5);
             this.dashboard_pnl.Controls.Add(this.panel4);
             this.dashboard_pnl.Controls.Add(this.panel3);
-            this.dashboard_pnl.Controls.Add(this.panel2);
             this.dashboard_pnl.Controls.Add(this.panel1);
             this.dashboard_pnl.Location = new System.Drawing.Point(12, 243);
             this.dashboard_pnl.Name = "dashboard_pnl";
@@ -328,14 +322,15 @@ namespace Capstone
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel4.Controls.Add(this.lgbk_now);
             this.panel4.Controls.Add(this.logbook);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(644, 190);
+            this.panel4.Location = new System.Drawing.Point(332, 184);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(300, 160);
             this.panel4.TabIndex = 5;
@@ -394,7 +389,7 @@ namespace Capstone
             this.panel3.Controls.Add(this.curr_availbk);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(332, 190);
+            this.panel3.Location = new System.Drawing.Point(14, 181);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(300, 160);
             this.panel3.TabIndex = 4;
@@ -402,7 +397,7 @@ namespace Capstone
             // curr_availbk
             // 
             this.curr_availbk.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.curr_availbk.Location = new System.Drawing.Point(96, 79);
+            this.curr_availbk.Location = new System.Drawing.Point(96, 59);
             this.curr_availbk.Name = "curr_availbk";
             this.curr_availbk.Size = new System.Drawing.Size(195, 66);
             this.curr_availbk.TabIndex = 10;
@@ -426,36 +421,6 @@ namespace Capstone
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(14, 190);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 160);
-            this.panel2.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(91, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(195, 66);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "label11";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Capstone.Properties.Resources.noun_85138;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 154);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
@@ -570,8 +535,6 @@ namespace Capstone
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profimg)).EndInit();
@@ -608,13 +571,10 @@ namespace Capstone
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label month_bkbr;
         private System.Windows.Forms.Label totalbkbr;
         private System.Windows.Forms.Label label14;

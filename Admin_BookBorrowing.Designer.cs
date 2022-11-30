@@ -527,12 +527,13 @@ namespace Capstone
             // 
             // showappbtn
             // 
-            this.showappbtn.Location = new System.Drawing.Point(221, 496);
+            this.showappbtn.Location = new System.Drawing.Point(416, 525);
             this.showappbtn.Name = "showappbtn";
             this.showappbtn.Size = new System.Drawing.Size(185, 23);
             this.showappbtn.TabIndex = 194;
             this.showappbtn.Text = "Show Approved Requests";
             this.showappbtn.UseVisualStyleBackColor = true;
+            this.showappbtn.Visible = false;
             this.showappbtn.Click += new System.EventHandler(this.showappbtn_Click);
             // 
             // bkbrtimer
@@ -553,7 +554,7 @@ namespace Capstone
             // 
             // viewbkbrindbtn
             // 
-            this.viewbkbrindbtn.Location = new System.Drawing.Point(8, 525);
+            this.viewbkbrindbtn.Location = new System.Drawing.Point(220, 496);
             this.viewbkbrindbtn.Name = "viewbkbrindbtn";
             this.viewbkbrindbtn.Size = new System.Drawing.Size(221, 23);
             this.viewbkbrindbtn.TabIndex = 196;
@@ -563,7 +564,7 @@ namespace Capstone
             // 
             // clrbtn
             // 
-            this.clrbtn.Location = new System.Drawing.Point(286, 525);
+            this.clrbtn.Location = new System.Drawing.Point(12, 525);
             this.clrbtn.Name = "clrbtn";
             this.clrbtn.Size = new System.Drawing.Size(119, 23);
             this.clrbtn.TabIndex = 197;
