@@ -818,7 +818,7 @@ namespace Capstone
                         if (//output.Count > 0 || 
                             output2.Count > 0)
                         {
-                            MessageBox.Show("The title/accession number of the said book has already had the exact same entry within the database.");
+                            MessageBox.Show("The accession number of the said book has already had the exact same entry within the database.");
                         }
                         else if (//output.Count == 0 && 
                             output2.Count == 0)

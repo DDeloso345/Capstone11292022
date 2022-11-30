@@ -17,6 +17,49 @@ namespace Capstone
         private void Staff_DashboardUI_Load(object sender, EventArgs e)
         {
             Display();
+            Notif();
+        }
+        public void Notif()
+        {
+            DateTime a = DateTime.Now;
+            String con = a.ToString("yyyy-MM");
+            String date = a.ToString("yyyy-MM-dd");
+
+            month_bkbr.Text = adda.SelectMonthBKBR(con);
+            if (month_bkbr.Text.Equals(""))
+            {
+                month_bkbr.Text = "0";
+            }
+            totalbkbr.Text = adda.SelectTotalBKBR();
+            if (totalbkbr.Text.Equals(""))
+            {
+                totalbkbr.Text = "0";
+            }
+            missingbk.Text = adda.SelectMissingBooks();
+            if (missingbk.Text.Equals(""))
+            {
+                missingbk.Text = "0";
+            }
+            curr_availbk.Text = adda.SelectAvailableBooks();
+            if (curr_availbk.Text.Equals(""))
+            {
+                curr_availbk.Text = "0";
+            }
+            expmemb.Text = adda.SelectTotalExpMemb(a.ToString("yyyy-MM-dd"));
+            if (expmemb.Text.Equals(""))
+            {
+                expmemb.Text = "0";
+            }
+            logbook.Text = adda.SelectTotalLogbook();
+            if (logbook.Text.Equals(""))
+            {
+                logbook.Text = "0";
+            }
+            lgbk_now.Text = adda.SelectTodayLogbook(date);
+            if (lgbk_now.Text.Equals(""))
+            {
+                lgbk_now.Text = "0";
+            }
         }
         public void SetPic()
         {
