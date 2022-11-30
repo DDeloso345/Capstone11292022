@@ -627,5 +627,11 @@
   <ItemGroup>
     <None Include="Resources\1468450-200.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngfind.com-cancel-sign-png-2252764.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-1294426_1280.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
