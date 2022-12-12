@@ -351,16 +351,18 @@ namespace Capstone
             this.label2.Size = new System.Drawing.Size(119, 13);
             this.label2.TabIndex = 73;
             this.label2.Text = "AUTOMATIC BACKUP:";
-            this.label2.Visible = false;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Weekly",
+            "Monthly",
+            "Yearly"});
             this.comboBox1.Location = new System.Drawing.Point(205, 525);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 75;
-            this.comboBox1.Visible = false;
             // 
             // autobackup_chkbox
             // 
@@ -371,7 +373,6 @@ namespace Capstone
             this.autobackup_chkbox.TabIndex = 76;
             this.autobackup_chkbox.Text = "Enable Automatic Backup:";
             this.autobackup_chkbox.UseVisualStyleBackColor = true;
-            this.autobackup_chkbox.Visible = false;
             // 
             // label3
             // 

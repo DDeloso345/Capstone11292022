@@ -31,11 +31,12 @@ namespace Capstone
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_LibrarianUI));
             this.lib_side_menu_pnl = new System.Windows.Forms.Panel();
-            this.rep_charts_submenu = new System.Windows.Forms.Panel();
             this.ClientLogbookReport = new System.Windows.Forms.Button();
-            this.BookInvReport = new System.Windows.Forms.Button();
+            this.rep_charts_submenu = new System.Windows.Forms.Panel();
             this.MemberFreqReport = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.BorrowedBooksReport = new System.Windows.Forms.Button();
+            this.BookInvReport = new System.Windows.Forms.Button();
             this.repcharts_btn = new System.Windows.Forms.Button();
             this.backuprestore_btn_sidepanel = new System.Windows.Forms.Button();
             this.bookreturnsbtn = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@ namespace Capstone
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.UIFormSubpanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.lib_side_menu_pnl.SuspendLayout();
             this.rep_charts_submenu.SuspendLayout();
             this.act_mngmt_submenu.SuspendLayout();
@@ -66,7 +66,6 @@ namespace Capstone
             // 
             this.lib_side_menu_pnl.AutoScroll = true;
             this.lib_side_menu_pnl.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.lib_side_menu_pnl.Controls.Add(this.ClientLogbookReport);
             this.lib_side_menu_pnl.Controls.Add(this.rep_charts_submenu);
             this.lib_side_menu_pnl.Controls.Add(this.repcharts_btn);
             this.lib_side_menu_pnl.Controls.Add(this.backuprestore_btn_sidepanel);
@@ -86,18 +85,6 @@ namespace Capstone
             this.lib_side_menu_pnl.TabIndex = 2;
             this.lib_side_menu_pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.lib_side_menu_pnl_Paint);
             // 
-            // rep_charts_submenu
-            // 
-            this.rep_charts_submenu.Controls.Add(this.MemberFreqReport);
-            this.rep_charts_submenu.Controls.Add(this.button1);
-            this.rep_charts_submenu.Controls.Add(this.BorrowedBooksReport);
-            this.rep_charts_submenu.Controls.Add(this.BookInvReport);
-            this.rep_charts_submenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rep_charts_submenu.Location = new System.Drawing.Point(0, 486);
-            this.rep_charts_submenu.Name = "rep_charts_submenu";
-            this.rep_charts_submenu.Size = new System.Drawing.Size(163, 146);
-            this.rep_charts_submenu.TabIndex = 4;
-            // 
             // ClientLogbookReport
             // 
             this.ClientLogbookReport.Dock = System.Windows.Forms.DockStyle.Top;
@@ -105,7 +92,7 @@ namespace Capstone
             this.ClientLogbookReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClientLogbookReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientLogbookReport.ForeColor = System.Drawing.Color.Cyan;
-            this.ClientLogbookReport.Location = new System.Drawing.Point(0, 632);
+            this.ClientLogbookReport.Location = new System.Drawing.Point(0, 140);
             this.ClientLogbookReport.Name = "ClientLogbookReport";
             this.ClientLogbookReport.Size = new System.Drawing.Size(163, 30);
             this.ClientLogbookReport.TabIndex = 11;
@@ -114,21 +101,18 @@ namespace Capstone
             this.ClientLogbookReport.UseVisualStyleBackColor = true;
             this.ClientLogbookReport.Click += new System.EventHandler(this.ClientLogbookReport_Click);
             // 
-            // BookInvReport
+            // rep_charts_submenu
             // 
-            this.BookInvReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BookInvReport.FlatAppearance.BorderSize = 0;
-            this.BookInvReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BookInvReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookInvReport.ForeColor = System.Drawing.Color.Cyan;
-            this.BookInvReport.Location = new System.Drawing.Point(0, 0);
-            this.BookInvReport.Name = "BookInvReport";
-            this.BookInvReport.Size = new System.Drawing.Size(163, 30);
-            this.BookInvReport.TabIndex = 10;
-            this.BookInvReport.Text = "Book Inventory Report";
-            this.BookInvReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BookInvReport.UseVisualStyleBackColor = true;
-            this.BookInvReport.Click += new System.EventHandler(this.BookInvReport_Click);
+            this.rep_charts_submenu.Controls.Add(this.ClientLogbookReport);
+            this.rep_charts_submenu.Controls.Add(this.MemberFreqReport);
+            this.rep_charts_submenu.Controls.Add(this.button1);
+            this.rep_charts_submenu.Controls.Add(this.BorrowedBooksReport);
+            this.rep_charts_submenu.Controls.Add(this.BookInvReport);
+            this.rep_charts_submenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rep_charts_submenu.Location = new System.Drawing.Point(0, 486);
+            this.rep_charts_submenu.Name = "rep_charts_submenu";
+            this.rep_charts_submenu.Size = new System.Drawing.Size(163, 183);
+            this.rep_charts_submenu.TabIndex = 4;
             // 
             // MemberFreqReport
             // 
@@ -146,6 +130,21 @@ namespace Capstone
             this.MemberFreqReport.UseVisualStyleBackColor = true;
             this.MemberFreqReport.Click += new System.EventHandler(this.MemberFreqReport_Click);
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Cyan;
+            this.button1.Location = new System.Drawing.Point(0, 70);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 40);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Member\'s Borrowed Books Report";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // BorrowedBooksReport
             // 
             this.BorrowedBooksReport.Dock = System.Windows.Forms.DockStyle.Top;
@@ -161,6 +160,22 @@ namespace Capstone
             this.BorrowedBooksReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrowedBooksReport.UseVisualStyleBackColor = true;
             this.BorrowedBooksReport.Click += new System.EventHandler(this.BorrowedBooksReport_Click);
+            // 
+            // BookInvReport
+            // 
+            this.BookInvReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BookInvReport.FlatAppearance.BorderSize = 0;
+            this.BookInvReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BookInvReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookInvReport.ForeColor = System.Drawing.Color.Cyan;
+            this.BookInvReport.Location = new System.Drawing.Point(0, 0);
+            this.BookInvReport.Name = "BookInvReport";
+            this.BookInvReport.Size = new System.Drawing.Size(163, 30);
+            this.BookInvReport.TabIndex = 10;
+            this.BookInvReport.Text = "Book Inventory Report";
+            this.BookInvReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BookInvReport.UseVisualStyleBackColor = true;
+            this.BookInvReport.Click += new System.EventHandler(this.BookInvReport_Click);
             // 
             // repcharts_btn
             // 
@@ -217,7 +232,7 @@ namespace Capstone
             this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout_btn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.logout_btn.Location = new System.Drawing.Point(0, 662);
+            this.logout_btn.Location = new System.Drawing.Point(0, 669);
             this.logout_btn.Name = "logout_btn";
             this.logout_btn.Size = new System.Drawing.Size(163, 30);
             this.logout_btn.TabIndex = 7;
@@ -398,21 +413,6 @@ namespace Capstone
             this.UIFormSubpanel.Size = new System.Drawing.Size(1004, 661);
             this.UIFormSubpanel.TabIndex = 3;
             this.UIFormSubpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UIFormSubpanel_Paint);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Cyan;
-            this.button1.Location = new System.Drawing.Point(0, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 40);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Member\'s Borrowed Books Report";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Admin_LibrarianUI
             // 

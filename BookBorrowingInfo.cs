@@ -34,7 +34,6 @@ namespace Capstone
     {
         public String NotificationMsg { get; set; }
         public String DatePosted { get; set; }
-        public String Source { get; set; }
     }
     public class ApprovedNotifs
     {

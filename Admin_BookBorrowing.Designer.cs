@@ -587,6 +587,7 @@ namespace Capstone
             this.notifdgv.TabIndex = 181;
             this.notifdgv.Visible = false;
             this.notifdgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.notifdgv_CellClick);
+            this.notifdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.notifdgv_CellContentClick);
             // 
             // Admin_BookBorrowing
             // 

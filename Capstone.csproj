@@ -12,8 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,21 +50,8 @@
       <HintPath>packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
-    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
@@ -150,7 +135,19 @@
     </Compile>
     <Compile Include="BookBorrowingInfo.cs" />
     <Compile Include="BookReturnsInfo.cs" />
+    <Compile Include="ClientLogbookTables.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientLogbookTables.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ClientWalkInLogbookInfo.cs" />
+    <Compile Include="ClientLogbookGraphs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientLogbookGraphs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MemberNotifExpiryDate.cs" />
     <Compile Include="ModifyClientLogbookDetails_Admin.cs">
       <SubType>Form</SubType>
@@ -165,60 +162,6 @@
       <DependentUpon>ModifyClientLogbookDetails_Staff.cs</DependentUpon>
     </Compile>
     <Compile Include="ORHistoryComboboxClass.cs" />
-    <Compile Include="Reports\BookInventory\Graph_BookAvailability.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Graph_BookAvailability.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\Narrative_BookAvailability.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Narrative_BookAvailability.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\Report_AvailableBooks.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_AvailableBooks.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\Report_BookInventory.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_BookInventory.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\Report_BorrowedBooks.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_BorrowedBooks.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\Report_DiscardedBooks.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_DiscardedBooks.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\Report_MissingBooks.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_MissingBooks.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\View_BookInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\BookInventory\View_BookInventory.Designer.cs">
-      <DependentUpon>View_BookInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Set_Reports.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Set_Reports.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\SQL_Reports.cs" />
     <Compile Include="SelectBKINVAuthorInfo_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -517,6 +460,14 @@
     <EmbeddedResource Include="BKR_SelectBKBR_Info.resx">
       <DependentUpon>BKR_SelectBKBR_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientLogbookGraphs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientLogbookGraphs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientLogbookTables.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientLogbookTables.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertORNoForm.resx">
       <DependentUpon>InsertORNoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -534,37 +485,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ORHistoryStaff.resx">
       <DependentUpon>ORHistoryStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Graph_BookAvailability.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Graph_BookAvailability.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Narrative_BookAvailability.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Narrative_BookAvailability.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_AvailableBooks.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_AvailableBooks.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_BookInventory.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_BookInventory.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_BorrowedBooks.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_BorrowedBooks.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_DiscardedBooks.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_DiscardedBooks.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_MissingBooks.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_MissingBooks.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\View_BookInventory.resx">
-      <DependentUpon>View_BookInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectBKINVAuthorInfo_Admin.resx">
       <DependentUpon>SelectBKINVAuthorInfo_Admin.cs</DependentUpon>
@@ -666,17 +586,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Reports\Set_Reports.xsc">
-      <DependentUpon>Set_Reports.xsd</DependentUpon>
-    </None>
-    <None Include="Reports\Set_Reports.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Set_Reports.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reports\Set_Reports.xss">
-      <DependentUpon>Set_Reports.xsd</DependentUpon>
-    </None>
     <None Include="Resources\acrylic.png" />
   </ItemGroup>
   <ItemGroup>
@@ -719,9 +628,10 @@
     <None Include="Resources\1468450-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\cancel_1294426_1280.png" />
-    <Content Include="Resources\pngfind.com-cancel-sign-png-2252764.png" />
+    <None Include="Resources\pngfind.com-cancel-sign-png-2252764.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\cancel-1294426_1280.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

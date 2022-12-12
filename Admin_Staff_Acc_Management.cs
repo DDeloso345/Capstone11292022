@@ -413,7 +413,6 @@ namespace Capstone
                                         UpdateBinding();
                                     }
                                 }
-                                else { }
                             }
                             else { }
                         }
@@ -444,7 +443,6 @@ namespace Capstone
                                         UpdateBinding();
                                     }
                                 }
-                                else { }
                             }
                             else { }
                         }
@@ -479,7 +477,6 @@ namespace Capstone
                                         UpdateBinding();
                                     }
                                 }
-                                else { }
                             }
                             else { }
                         }
@@ -510,8 +507,6 @@ namespace Capstone
                                         UpdateBinding();
                                     }
                                 }
-                                else { }
-
                             }
                             else { }
                         }
