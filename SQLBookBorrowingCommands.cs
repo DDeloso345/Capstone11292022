@@ -129,7 +129,7 @@ namespace Capstone
                 var uid = Convert.ToString(connection.ExecuteScalar($"select COCPL_UID from member_id_info where id = '{uid_id}'"));
                 var acn = Convert.ToString(connection.ExecuteScalar($"select AccessionNo from BKBorrowingInfo where id = '{id}'"));
                 var bkt = Convert.ToString(connection.ExecuteScalar($"select BookTitle from BKINV_BKInfo where id = '{acn}'"));
-                var output = connection.Execute($"insert into bkbr_notif values('The book being borrowed with the title {bkt} borrowed by {uid} will expire on {expdate}. \nPlease contact the following member to inform them about the the book they have been borrowing.',CURRENT_TIMESTAMP, '{acn}', '{uid_id}', " + " 2)");
+                var output = connection.Execute($"insert into bkbr_notif values('The book being borrowed with the title {bkt} borrowed by {uid} will expire on {expdate}. \nPlease contact the following member to inform them about the the book they have been borrowing.',CURRENT_TIMESTAMP, '{acn}', '{uid_id}')");
             }
         }
 

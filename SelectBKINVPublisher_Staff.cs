@@ -53,10 +53,6 @@ namespace Capstone
 
         private void setpub_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.bkinvpublisher = pubinp.Text;
-            Properties.Settings.Default.Save();
-            Staff_BookInventory.Publisher = Properties.Settings.Default.bkinvpublisher;
-            this.Close();
         }
 
         private void insertbtn_Click(object sender, EventArgs e)
@@ -80,6 +76,14 @@ namespace Capstone
         private void refbtn_Click(object sender, EventArgs e)
         {
             UpdateBinding();
+        }
+
+        private void dgv_sel_org_DoubleClick(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.bkinvpublisher = pubinp.Text;
+            Properties.Settings.Default.Save();
+            Staff_BookInventory.Publisher = Properties.Settings.Default.bkinvpublisher;
+            this.Close();
         }
     }
 }

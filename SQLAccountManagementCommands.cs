@@ -141,8 +141,10 @@ namespace Capstone
                     if (com.Count > 1) {
                         MessageBox.Show("The specified username is already taken. Please choose another username.");
                     }
-                    var output = connection.Execute($"update emp_info_main set FirstName = '{fname}', MiddleName = '{mname}', LastName = '{lname}', Suffix = '{suffix}', Position = '{position}', EmpRoles = '{hierlvl}', EMailAddress = '{email}', ContactNo = '{number}', Username = '{username}', password = '{password}', ImgPath = '{imgpath}' where id = '{id}'");
-                    MessageBox.Show("The specified account has been successfully updated.");
+                    else if (com.Count == 0) {
+                        var output = connection.Execute($"update emp_info_main set FirstName = '{fname}', MiddleName = '{mname}', LastName = '{lname}', Suffix = '{suffix}', Position = '{position}', EmpRoles = '{hierlvl}', EMailAddress = '{email}', ContactNo = '{number}', Username = '{username}', password = '{password}', ImgPath = '{imgpath}' where id = '{id}'");
+                        MessageBox.Show("The specified account has been successfully updated.");
+                    }
                 }
                 catch (Exception ex)
                 {

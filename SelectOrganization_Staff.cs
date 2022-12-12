@@ -24,12 +24,7 @@ namespace Capstone
         }
 
         private void setorg_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.memberorganization = orginp.Text;
-            Properties.Settings.Default.Save();
-            Staff_Member_Account_Management.orgTxt = Properties.Settings.Default.memberorganization;
-            this.Close();
-        }
+        {        }
 
         private void insertbtn_Click(object sender, EventArgs e)
         {
@@ -84,6 +79,14 @@ namespace Capstone
                 }
                 catch (Exception) { }
             }
+        }
+
+        private void dgv_sel_org_DoubleClick(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.memberorganization = orginp.Text;
+            Properties.Settings.Default.Save();
+            Staff_Member_Account_Management.orgTxt = Properties.Settings.Default.memberorganization;
+            this.Close();
         }
     }
 }

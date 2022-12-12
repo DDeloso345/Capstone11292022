@@ -43,7 +43,6 @@ namespace Capstone
             this.updbtn = new System.Windows.Forms.Button();
             this.delbtn = new System.Windows.Forms.Button();
             this.clearbtn = new System.Windows.Forms.Button();
-            this.setorg = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.refbtn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sel_org)).BeginInit();
@@ -114,6 +113,7 @@ namespace Capstone
             this.dgv_sel_org.Size = new System.Drawing.Size(546, 183);
             this.dgv_sel_org.TabIndex = 45;
             this.dgv_sel_org.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sel_org_CellClick);
+            this.dgv_sel_org.DoubleClick += new System.EventHandler(this.dgv_sel_org_DoubleClick);
             // 
             // label1
             // 
@@ -130,7 +130,7 @@ namespace Capstone
             this.orginp.Location = new System.Drawing.Point(237, 79);
             this.orginp.MaxLength = 32625;
             this.orginp.Name = "orginp";
-            this.orginp.Size = new System.Drawing.Size(225, 20);
+            this.orginp.Size = new System.Drawing.Size(330, 20);
             this.orginp.TabIndex = 50;
             // 
             // orgid
@@ -185,16 +185,6 @@ namespace Capstone
             this.clearbtn.UseVisualStyleBackColor = true;
             this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
-            // setorg
-            // 
-            this.setorg.Location = new System.Drawing.Point(468, 77);
-            this.setorg.Name = "setorg";
-            this.setorg.Size = new System.Drawing.Size(99, 23);
-            this.setorg.TabIndex = 71;
-            this.setorg.Text = "Set Organization";
-            this.setorg.UseVisualStyleBackColor = true;
-            this.setorg.Click += new System.EventHandler(this.setorg_Click);
-            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -225,7 +215,6 @@ namespace Capstone
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(584, 341);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.setorg);
             this.Controls.Add(this.refbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.delbtn);
@@ -264,7 +253,6 @@ namespace Capstone
         private System.Windows.Forms.Button delbtn;
         private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.PictureBox refbtn;
-        private System.Windows.Forms.Button setorg;
         private System.Windows.Forms.Label label2;
     }
 }

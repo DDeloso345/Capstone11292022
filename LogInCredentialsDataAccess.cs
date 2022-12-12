@@ -20,6 +20,7 @@ namespace Capstone
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(SQLConnectionClass.ConnVal("lb_TestDB")))
             {
                 var output = connection.Query<LogInCredentials>($"SELECT username, password, emproles from emp_info_main where EmpRoles = '1' and username = '{username}' and password = '{password}'").ToList();
+
                 return output;
             }
         }

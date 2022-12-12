@@ -29,15 +29,14 @@ namespace Capstone
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.auttxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.crit_cmb = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.setaut = new System.Windows.Forms.Button();
             this.refbtn = new System.Windows.Forms.PictureBox();
             this.clearbtn = new System.Windows.Forms.Button();
             this.delbtn = new System.Windows.Forms.Button();
@@ -59,7 +58,7 @@ namespace Capstone
             this.auttxt.Location = new System.Drawing.Point(195, 152);
             this.auttxt.MaxLength = 32625;
             this.auttxt.Name = "auttxt";
-            this.auttxt.Size = new System.Drawing.Size(352, 20);
+            this.auttxt.Size = new System.Drawing.Size(458, 20);
             this.auttxt.TabIndex = 164;
             // 
             // label4
@@ -106,16 +105,6 @@ namespace Capstone
             this.label2.Size = new System.Drawing.Size(684, 27);
             this.label2.TabIndex = 160;
             this.label2.Text = "SELECT BOOK AUTHOR\'S INFORMATION";
-            // 
-            // setaut
-            // 
-            this.setaut.Location = new System.Drawing.Point(553, 106);
-            this.setaut.Name = "setaut";
-            this.setaut.Size = new System.Drawing.Size(99, 68);
-            this.setaut.TabIndex = 159;
-            this.setaut.Text = "Set Author\'s Information";
-            this.setaut.UseVisualStyleBackColor = true;
-            this.setaut.Click += new System.EventHandler(this.setaut_Click);
             // 
             // refbtn
             // 
@@ -185,7 +174,7 @@ namespace Capstone
             this.autnotxt.Location = new System.Drawing.Point(195, 115);
             this.autnotxt.MaxLength = 32625;
             this.autnotxt.Name = "autnotxt";
-            this.autnotxt.Size = new System.Drawing.Size(352, 20);
+            this.autnotxt.Size = new System.Drawing.Size(458, 20);
             this.autnotxt.TabIndex = 152;
             // 
             // label1
@@ -231,37 +220,38 @@ namespace Capstone
             this.dgv_sel_org.AllowUserToDeleteRows = false;
             this.dgv_sel_org.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_sel_org.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_sel_org.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_sel_org.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_sel_org.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_sel_org.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_sel_org.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_sel_org.Location = new System.Drawing.Point(19, 190);
             this.dgv_sel_org.Name = "dgv_sel_org";
             this.dgv_sel_org.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_sel_org.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_sel_org.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_sel_org.Size = new System.Drawing.Size(634, 183);
             this.dgv_sel_org.TabIndex = 147;
             this.dgv_sel_org.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sel_org_CellClick);
+            this.dgv_sel_org.DoubleClick += new System.EventHandler(this.dgv_sel_org_DoubleClick);
             // 
             // SelectBKINVAuthorInfo_Admin
             // 
@@ -274,7 +264,6 @@ namespace Capstone
             this.Controls.Add(this.label3);
             this.Controls.Add(this.crit_cmb);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.setaut);
             this.Controls.Add(this.refbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.delbtn);
@@ -306,7 +295,6 @@ namespace Capstone
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox crit_cmb;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button setaut;
         private System.Windows.Forms.PictureBox refbtn;
         private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.Button delbtn;

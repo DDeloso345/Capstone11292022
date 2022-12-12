@@ -55,10 +55,7 @@ namespace Capstone
 
         private void setsrc_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.bkinvsource = srcinp.Text;
-            Properties.Settings.Default.Save();
-            Admin_BookInventory.BookSource = Properties.Settings.Default.bkinvsource;
-            this.Close();
+            
         }
 
         private void insertbtn_Click(object sender, EventArgs e)
@@ -88,6 +85,14 @@ namespace Capstone
         private void refbtn_Click(object sender, EventArgs e)
         {
             UpdateBinding();
+        }
+
+        private void dgv_sel_org_DoubleClick(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.bkinvsource = srcinp.Text;
+            Properties.Settings.Default.Save();
+            Admin_BookInventory.BookSource = Properties.Settings.Default.bkinvsource;
+            this.Close();
         }
     }
 }

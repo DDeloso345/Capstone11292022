@@ -480,9 +480,8 @@ namespace Capstone
                     DataGridViewRow row = this.notifdgv.Rows[e.RowIndex];
                     String notif = notifdgv.Rows[e.RowIndex].Cells["NotificationMsg"].Value.ToString();
                     String datepos = notifdgv.Rows[e.RowIndex].Cells["DatePosted"].Value.ToString();
-                    String src = notifdgv.Rows[e.RowIndex].Cells["Source"].Value.ToString();
-                    String title = bc.getAccNoIDFromNotifs(notif);
-                    String uid = bc.getUID_IDFromNotifs(notif);
+                    //String title = bc.getAccNoIDFromNotifs(notif);
+                    //String uid = bc.getUID_IDFromNotifs(notif);
                     if (notif.StartsWith("The book being borrowed with the title "))
                     {
                         var ntf = MessageBox.Show("The following notification has the message:" + "\n\n" + bc.GetAndDisplayMsgNotif(notif).ToString() + "\n\nThis notification was posted on " + bc.GetAndDisplayTimestamp(notif) + ".", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -491,20 +490,20 @@ namespace Capstone
                         {
                         }
                     }
-                    else if (notif.StartsWith("A member with the following UID"))
-                    {
-                        var ntf = MessageBox.Show("The following notification has the message:" + "\n\n" + bc.GetAndDisplayMsgNotif(notif).ToString() + "\n\nThis notification was posted on " + bc.GetAndDisplayTimestamp(notif) + ".", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    //else if (notif.StartsWith("A member with the following UID"))
+                    //{
+                    //    var ntf = MessageBox.Show("The following notification has the message:" + "\n\n" + bc.GetAndDisplayMsgNotif(notif).ToString() + "\n\nThis notification was posted on " + bc.GetAndDisplayTimestamp(notif) + ".", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-                        if (ntf == DialogResult.Yes)
-                        {
-                            bc.InsertApprovedBKBRFromKiosk(notif, title, uid);
-                            UpdateBinding();
+                    //    if (ntf == DialogResult.Yes)
+                    //    {
+                    //        bc.InsertApprovedBKBRFromKiosk(notif, title, uid);
+                    //        UpdateBinding();
 
-                        }
-                        else if (ntf == DialogResult.No)
-                        {
-                        }
-                    }
+                    //    }
+                    //    else if (ntf == DialogResult.No)
+                    //    {
+                    //    }
+                    //}
 
                 }
             }

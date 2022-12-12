@@ -33,7 +33,6 @@ namespace Capstone
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
-            this.setaut = new System.Windows.Forms.Button();
             this.refbtn = new System.Windows.Forms.PictureBox();
             this.clearbtn = new System.Windows.Forms.Button();
             this.updbtn = new System.Windows.Forms.Button();
@@ -64,16 +63,6 @@ namespace Capstone
             this.label2.Size = new System.Drawing.Size(684, 27);
             this.label2.TabIndex = 142;
             this.label2.Text = "SELECT BOOK AUTHOR\'S INFORMATION";
-            // 
-            // setaut
-            // 
-            this.setaut.Location = new System.Drawing.Point(553, 106);
-            this.setaut.Name = "setaut";
-            this.setaut.Size = new System.Drawing.Size(99, 68);
-            this.setaut.TabIndex = 141;
-            this.setaut.Text = "Set Author\'s Information";
-            this.setaut.UseVisualStyleBackColor = true;
-            this.setaut.Click += new System.EventHandler(this.setaut_Click);
             // 
             // refbtn
             // 
@@ -132,7 +121,7 @@ namespace Capstone
             this.autnotxt.Location = new System.Drawing.Point(195, 115);
             this.autnotxt.MaxLength = 32625;
             this.autnotxt.Name = "autnotxt";
-            this.autnotxt.Size = new System.Drawing.Size(352, 20);
+            this.autnotxt.Size = new System.Drawing.Size(457, 20);
             this.autnotxt.TabIndex = 134;
             // 
             // label1
@@ -209,6 +198,7 @@ namespace Capstone
             this.dgv_sel_org.Size = new System.Drawing.Size(634, 183);
             this.dgv_sel_org.TabIndex = 129;
             this.dgv_sel_org.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sel_org_CellClick);
+            this.dgv_sel_org.DoubleClick += new System.EventHandler(this.dgv_sel_org_DoubleClick);
             // 
             // crit_cmb
             // 
@@ -248,7 +238,7 @@ namespace Capstone
             this.auttxt.Location = new System.Drawing.Point(195, 152);
             this.auttxt.MaxLength = 32625;
             this.auttxt.Name = "auttxt";
-            this.auttxt.Size = new System.Drawing.Size(352, 20);
+            this.auttxt.Size = new System.Drawing.Size(458, 20);
             this.auttxt.TabIndex = 146;
             // 
             // SelectBKINVAuthorInfo_Staff
@@ -262,7 +252,6 @@ namespace Capstone
             this.Controls.Add(this.label3);
             this.Controls.Add(this.crit_cmb);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.setaut);
             this.Controls.Add(this.refbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.updbtn);
@@ -289,7 +278,6 @@ namespace Capstone
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button setaut;
         private System.Windows.Forms.PictureBox refbtn;
         private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.Button updbtn;

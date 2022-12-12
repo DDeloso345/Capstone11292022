@@ -398,7 +398,7 @@ namespace Capstone
             // 
             // label19
             // 
-            this.label19.BackColor = System.Drawing.Color.SteelBlue;
+            this.label19.BackColor = System.Drawing.Color.SeaGreen;
             this.label19.Dock = System.Windows.Forms.DockStyle.Top;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Aquamarine;

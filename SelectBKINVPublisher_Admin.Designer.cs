@@ -33,7 +33,6 @@ namespace Capstone
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
-            this.setpub = new System.Windows.Forms.Button();
             this.refbtn = new System.Windows.Forms.PictureBox();
             this.clearbtn = new System.Windows.Forms.Button();
             this.delbtn = new System.Windows.Forms.Button();
@@ -61,16 +60,6 @@ namespace Capstone
             this.label2.Size = new System.Drawing.Size(584, 27);
             this.label2.TabIndex = 128;
             this.label2.Text = "SELECT BOOK PUBLISHER";
-            // 
-            // setpub
-            // 
-            this.setpub.Location = new System.Drawing.Point(468, 77);
-            this.setpub.Name = "setpub";
-            this.setpub.Size = new System.Drawing.Size(99, 23);
-            this.setpub.TabIndex = 127;
-            this.setpub.Text = "Set Publisher";
-            this.setpub.UseVisualStyleBackColor = true;
-            this.setpub.Click += new System.EventHandler(this.setpub_Click);
             // 
             // refbtn
             // 
@@ -140,7 +129,7 @@ namespace Capstone
             this.pubinp.Location = new System.Drawing.Point(237, 79);
             this.pubinp.MaxLength = 32625;
             this.pubinp.Name = "pubinp";
-            this.pubinp.Size = new System.Drawing.Size(225, 20);
+            this.pubinp.Size = new System.Drawing.Size(330, 20);
             this.pubinp.TabIndex = 120;
             // 
             // label1
@@ -217,6 +206,7 @@ namespace Capstone
             this.dgv_sel_org.Size = new System.Drawing.Size(546, 183);
             this.dgv_sel_org.TabIndex = 115;
             this.dgv_sel_org.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sel_org_CellClick);
+            this.dgv_sel_org.DoubleClick += new System.EventHandler(this.dgv_sel_org_DoubleClick);
             // 
             // SelectBKINVPublisher_Admin
             // 
@@ -225,7 +215,6 @@ namespace Capstone
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(584, 341);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.setpub);
             this.Controls.Add(this.refbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.delbtn);
@@ -253,7 +242,6 @@ namespace Capstone
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button setpub;
         private System.Windows.Forms.PictureBox refbtn;
         private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.Button delbtn;

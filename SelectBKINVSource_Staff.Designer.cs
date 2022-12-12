@@ -33,7 +33,6 @@ namespace Capstone
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
-            this.setsrc = new System.Windows.Forms.Button();
             this.refbtn = new System.Windows.Forms.PictureBox();
             this.clearbtn = new System.Windows.Forms.Button();
             this.updbtn = new System.Windows.Forms.Button();
@@ -60,16 +59,6 @@ namespace Capstone
             this.label2.Size = new System.Drawing.Size(584, 27);
             this.label2.TabIndex = 86;
             this.label2.Text = "SELECT BOOK\'S SOURCE";
-            // 
-            // setsrc
-            // 
-            this.setsrc.Location = new System.Drawing.Point(468, 77);
-            this.setsrc.Name = "setsrc";
-            this.setsrc.Size = new System.Drawing.Size(99, 23);
-            this.setsrc.TabIndex = 85;
-            this.setsrc.Text = "Set Book Source";
-            this.setsrc.UseVisualStyleBackColor = true;
-            this.setsrc.Click += new System.EventHandler(this.setsrc_Click);
             // 
             // refbtn
             // 
@@ -128,7 +117,7 @@ namespace Capstone
             this.srcinp.Location = new System.Drawing.Point(237, 79);
             this.srcinp.MaxLength = 32625;
             this.srcinp.Name = "srcinp";
-            this.srcinp.Size = new System.Drawing.Size(225, 20);
+            this.srcinp.Size = new System.Drawing.Size(330, 20);
             this.srcinp.TabIndex = 78;
             // 
             // label1
@@ -205,6 +194,7 @@ namespace Capstone
             this.dgv_sel_org.Size = new System.Drawing.Size(546, 183);
             this.dgv_sel_org.TabIndex = 73;
             this.dgv_sel_org.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sel_org_CellClick);
+            this.dgv_sel_org.DoubleClick += new System.EventHandler(this.dgv_sel_org_DoubleClick);
             // 
             // SelectBKINVSource_Staff
             // 
@@ -213,7 +203,6 @@ namespace Capstone
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(584, 341);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.setsrc);
             this.Controls.Add(this.refbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.updbtn);
@@ -240,7 +229,6 @@ namespace Capstone
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button setsrc;
         private System.Windows.Forms.PictureBox refbtn;
         private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.Button updbtn;

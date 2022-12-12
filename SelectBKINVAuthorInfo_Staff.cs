@@ -27,12 +27,7 @@ namespace Capstone
 
         private void setaut_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.bkinvauthorno = autnotxt.Text;
-            Properties.Settings.Default.bkinvbkauthor = auttxt.Text;
-            Properties.Settings.Default.Save();
-            Staff_BookInventory.AuthorNo = Properties.Settings.Default.bkinvauthorno;
-            Staff_BookInventory.Author = Properties.Settings.Default.bkinvbkauthor;
-            this.Close();
+            
         }
 
         private void clearbtn_Click(object sender, EventArgs e)
@@ -101,6 +96,16 @@ namespace Capstone
         private void refbtn_Click(object sender, EventArgs e)
         {
             UpdateBinding();
+        }
+
+        private void dgv_sel_org_DoubleClick(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.bkinvauthorno = autnotxt.Text;
+            Properties.Settings.Default.bkinvbkauthor = auttxt.Text;
+            Properties.Settings.Default.Save();
+            Staff_BookInventory.AuthorNo = Properties.Settings.Default.bkinvauthorno;
+            Staff_BookInventory.Author = Properties.Settings.Default.bkinvbkauthor;
+            this.Close();
         }
     }
 }
