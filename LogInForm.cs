@@ -22,7 +22,7 @@ namespace Capstone
             login_staff = login_DA.StaffLogInCredentials(txtbox_username.Text, txtbox_password.Text);
             if (login_admin.Count == 1)
             {
-                MessageBox.Show("Logged in Successfully as Administrator");
+                //MessageBox.Show("Logged in Successfully as Administrator");
                 this.Hide();
                 Admin_LibrarianUI lib_ui = new Admin_LibrarianUI();
                 Properties.Settings.Default.loginusername = txtbox_username.Text;
@@ -32,7 +32,7 @@ namespace Capstone
             }
             else if (login_staff.Count == 1)
             {
-                MessageBox.Show("Logged in Successfully as Staff");
+                //MessageBox.Show("Logged in Successfully as Staff");
                 this.Hide();
                 Staff_LibrarianUI staffui = new Staff_LibrarianUI();
                 Properties.Settings.Default.loginusername = txtbox_username.Text;

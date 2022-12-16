@@ -144,16 +144,24 @@ namespace Capstone
 
         private void BorrowedBooksReport_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Reports.BorrowedBooks.View_BorrowedBooks());
         }
 
         private void MemberFreqReport_Click(object sender, EventArgs e)
         {
+            openChildForm(new Reports.MembershipFrequency.View_MembershipFrequency());
 
         }
 
         private void ClientLogbookReport_Click(object sender, EventArgs e)
         {
+            openChildForm(new Reports.ClientLogbook.View_ClientLogbook());
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Reports.MemberBorrowedBooks.View_MembersBorrowedBooks());
 
         }
     }

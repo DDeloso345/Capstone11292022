@@ -36,6 +36,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -165,53 +196,351 @@
       <DependentUpon>ModifyClientLogbookDetails_Staff.cs</DependentUpon>
     </Compile>
     <Compile Include="ORHistoryComboboxClass.cs" />
-    <Compile Include="Reports\BookInventory\Graph_BookAvailability.cs">
+    <Compile Include="Reports\BookInventory\Availability\BaseReport1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Graph_BookAvailability.rpt</DependentUpon>
+      <DependentUpon>BaseReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\BookInventory\Narrative_BookAvailability.cs">
+    <Compile Include="Reports\BookInventory\BaseSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Narrative_BookAvailability.rpt</DependentUpon>
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BookInventory\Date\BaseReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\BookInventory\Report_AvailableBooks.cs">
+    <Compile Include="Reports\BookInventory\Report_BI_Nar_A\Report_BI_Nar_A.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_AvailableBooks.rpt</DependentUpon>
+      <DependentUpon>Report_BI_Nar_A.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\BookInventory\Report_BookInventory.cs">
+    <Compile Include="Reports\BookInventory\Report_BI_Nar_A\Set_BI_Nar_A.cs">
+      <DependentUpon>Set_BI_Nar_A.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BookInventory\Report_BI_Nar_A\Set_BI_Nar_A.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_BookInventory.rpt</DependentUpon>
+      <DependentUpon>Set_BI_Nar_A.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BookInventory\Report_BI_Tab_A\Report_BI_Tab_A.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report_BI_Tab_A.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\BookInventory\Report_BorrowedBooks.cs">
+    <Compile Include="Reports\BookInventory\Report_BI_Tab_A\Report_BI_Tab_A_Table.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_BorrowedBooks.rpt</DependentUpon>
+      <DependentUpon>Report_BI_Tab_A_Table.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\BookInventory\Report_DiscardedBooks.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_DiscardedBooks.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="Reports\BookInventory\Report_BI_Tab_A\Set_BI_Tab_A.cs">
+      <DependentUpon>Set_BI_Tab_A.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Reports\BookInventory\Report_MissingBooks.cs">
+    <Compile Include="Reports\BookInventory\Report_BI_Tab_A\Set_BI_Tab_A.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_MissingBooks.rpt</DependentUpon>
-      <SubType>Component</SubType>
+      <DependentUpon>Set_BI_Tab_A.xsd</DependentUpon>
     </Compile>
     <Compile Include="Reports\BookInventory\View_BookInventory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\BookInventory\View_BookInventory.Designer.cs">
       <DependentUpon>View_BookInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BorrowedBooks\BB_Report_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BB_Report_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BorrowedBooks\BB_Set_Main.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BB_Set_Main.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BorrowedBooks\View_BorrowedBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\BorrowedBooks\View_BorrowedBooks.Designer.cs">
+      <DependentUpon>View_BorrowedBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\CLB_BaseReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_BaseReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Graph\CLB_Graph_Bar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Graph_Bar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Graph\CLB_Graph_Line.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Graph_Line.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Graph\CLB_Set_Graph.cs">
+      <DependentUpon>CLB_Set_Graph.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Graph\CLB_Set_Graph.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Set_Graph.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Narrative\CLB_Set_Narrative.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Set_Narrative.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Narrative\CLB_Report_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Report_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Tabular\CLB_Report_Tabular.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Report_Tabular.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Tabular\CLB_Set_Tabular.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Set_Tabular.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Tabular_Narrative\CLB_BaseTable_Tabular_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_BaseTable_Tabular_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Tabular_Narrative\CLB_Report_Tabular_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Report_Tabular_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\Tabular_Narrative\CLB_Set_Tabular_Narrative.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\View_ClientLogbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientLogbook\View_ClientLogbook.Designer.cs">
+      <DependentUpon>View_ClientLogbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Narrative\MBB_BaseTable_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_BaseTable_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Narrative\MBB_Report_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_Report_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Narrative\MBB_Set_Narrative.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_Set_Narrative.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular\MBB_BaseTable_Tabular.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_BaseTable_Tabular.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular\MBB_Report_Tabular.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_Report_Tabular.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular\MBB_Set_Tabular.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_Set_Tabular.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_BaseTable_Tabular_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_BaseTable_Tabular_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Report_Tabular_Narrative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_Report_Tabular_Narrative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Set_Tabular_Narrative.cs">
+      <DependentUpon>MBB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Set_Tabular_Narrative.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MBB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\View_MembersBorrowedBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberBorrowedBooks\View_MembersBorrowedBooks.Designer.cs">
+      <DependentUpon>View_MembersBorrowedBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Date\BaseReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Date\BaseSet.cs">
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Date\BaseSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Month\MF_Graph_Bar_Month.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Graph_Bar_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Month\MF_Graph_Line_Month.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Graph_Line_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Month\MF_Set_Graph_Month.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Graph_Month.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Year\MF_Graph_Bar_Year.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Graph_Bar_Year.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Year\MF_Graph_Line_Year.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Graph_Line_Year.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Year\MF_Set_Graph_Year.cs">
+      <DependentUpon>MF_Set_Graph_Year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Graph\Year\MF_Set_Graph_Year.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Graph_Year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Narrative\Month\MF_Report_Narrative_Month.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Report_Narrative_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Narrative\Month\MF_Set_Narrative_Month.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Narrative_Month.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Narrative\Year\MF_Report_Narrative_Year.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Report_Narrative_Year.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Narrative\Year\MF_Set_Narrative_Year.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Narrative_Year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular\Month\MF_Report_Tabular_Month.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Report_Tabular_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular\Month\MF_Set_Tabular_Month.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Tabular_Month.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular\Year\MF_Report_Tabular_Year.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Report_Tabular_Year.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular\Year\MF_Set_Tabular_Year.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Tabular_Year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_BaseTable_Tabular_Narrative_Month.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_BaseTable_Tabular_Narrative_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Report_Tabular_Narrative_Month.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Report_Tabular_Narrative_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Set_Tabular_Narrative_Month.cs">
+      <DependentUpon>MF_Set_Tabular_Narrative_Month.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Set_Tabular_Narrative_Month.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Tabular_Narrative_Month.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular_Narrative\Year\MF_Report_Tabular_Narrative_Year.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Report_Tabular_Narrative_Year.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\Tabular_Narrative\Year\MF_Set_Tabular_Narrative_Year.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MF_Set_Tabular_Narrative_Year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\View_MembershipFrequency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\MembershipFrequency\View_MembershipFrequency.Designer.cs">
+      <DependentUpon>View_MembershipFrequency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_Sub_Base.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report_Sub_Base.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Set_Reports.cs">
+      <DependentUpon>Set_Reports.xsd</DependentUpon>
     </Compile>
     <Compile Include="Reports\Set_Reports.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -535,36 +864,148 @@
     <EmbeddedResource Include="ORHistoryStaff.resx">
       <DependentUpon>ORHistoryStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Graph_BookAvailability.rpt">
+    <EmbeddedResource Include="Reports\BookInventory\Availability\BaseReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Graph_BookAvailability.cs</LastGenOutput>
+      <LastGenOutput>BaseReport1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Narrative_BookAvailability.rpt">
+    <EmbeddedResource Include="Reports\BookInventory\Date\BaseReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Narrative_BookAvailability.cs</LastGenOutput>
+      <LastGenOutput>BaseReport.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_AvailableBooks.rpt">
+    <EmbeddedResource Include="Reports\BookInventory\Report_BI_Nar_A\Report_BI_Nar_A.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_AvailableBooks.cs</LastGenOutput>
+      <LastGenOutput>Report_BI_Nar_A.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_BookInventory.rpt">
+    <EmbeddedResource Include="Reports\BookInventory\Report_BI_Tab_A\Report_BI_Tab_A.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_BookInventory.cs</LastGenOutput>
+      <LastGenOutput>Report_BI_Tab_A.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_BorrowedBooks.rpt">
+    <EmbeddedResource Include="Reports\BookInventory\Report_BI_Tab_A\Report_BI_Tab_A_Table.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_BorrowedBooks.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_DiscardedBooks.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_DiscardedBooks.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BookInventory\Report_MissingBooks.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_MissingBooks.cs</LastGenOutput>
+      <LastGenOutput>Report_BI_Tab_A_Table.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\BookInventory\View_BookInventory.resx">
       <DependentUpon>View_BookInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BorrowedBooks\BB_Report_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BB_Report_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BorrowedBooks\View_BorrowedBooks.resx">
+      <DependentUpon>View_BorrowedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\CLB_BaseReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_BaseReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\Graph\CLB_Graph_Bar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_Graph_Bar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\Graph\CLB_Graph_Line.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_Graph_Line.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\Narrative\CLB_Report_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_Report_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\Tabular\CLB_Report_Tabular.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_Report_Tabular.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\Tabular_Narrative\CLB_BaseTable_Tabular_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_BaseTable_Tabular_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\Tabular_Narrative\CLB_Report_Tabular_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CLB_Report_Tabular_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientLogbook\View_ClientLogbook.resx">
+      <DependentUpon>View_ClientLogbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\Narrative\MBB_BaseTable_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MBB_BaseTable_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\Narrative\MBB_Report_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MBB_Report_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\Tabular\MBB_BaseTable_Tabular.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MBB_BaseTable_Tabular.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\Tabular\MBB_Report_Tabular.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MBB_Report_Tabular.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_BaseTable_Tabular_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MBB_BaseTable_Tabular_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Report_Tabular_Narrative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MBB_Report_Tabular_Narrative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberBorrowedBooks\View_MembersBorrowedBooks.resx">
+      <DependentUpon>View_MembersBorrowedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Date\BaseReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaseReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Graph\Month\MF_Graph_Bar_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Graph_Bar_Month.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Graph\Month\MF_Graph_Line_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Graph_Line_Month.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Graph\Year\MF_Graph_Bar_Year.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Graph_Bar_Year.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Graph\Year\MF_Graph_Line_Year.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Graph_Line_Year.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Narrative\Month\MF_Report_Narrative_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Report_Narrative_Month.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Narrative\Year\MF_Report_Narrative_Year.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Report_Narrative_Year.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Tabular\Month\MF_Report_Tabular_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Report_Tabular_Month.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Tabular\Year\MF_Report_Tabular_Year.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Report_Tabular_Year.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_BaseTable_Tabular_Narrative_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_BaseTable_Tabular_Narrative_Month.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Report_Tabular_Narrative_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Report_Tabular_Narrative_Month.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\Tabular_Narrative\Year\MF_Report_Tabular_Narrative_Year.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MF_Report_Tabular_Narrative_Year.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MembershipFrequency\View_MembershipFrequency.resx">
+      <DependentUpon>View_MembershipFrequency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_Sub_Base.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report_Sub_Base.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectBKINVAuthorInfo_Admin.resx">
       <DependentUpon>SelectBKINVAuthorInfo_Admin.cs</DependentUpon>
@@ -666,6 +1107,226 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reports\BookInventory\BaseSet.xsc">
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BookInventory\BaseSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\BookInventory\BaseSet.xss">
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BookInventory\Report_BI_Nar_A\Set_BI_Nar_A.xsc">
+      <DependentUpon>Set_BI_Nar_A.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BookInventory\Report_BI_Nar_A\Set_BI_Nar_A.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Set_BI_Nar_A.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\BookInventory\Report_BI_Nar_A\Set_BI_Nar_A.xss">
+      <DependentUpon>Set_BI_Nar_A.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BookInventory\Report_BI_Tab_A\Set_BI_Tab_A.xsc">
+      <DependentUpon>Set_BI_Tab_A.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BookInventory\Report_BI_Tab_A\Set_BI_Tab_A.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Set_BI_Tab_A.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\BookInventory\Report_BI_Tab_A\Set_BI_Tab_A.xss">
+      <DependentUpon>Set_BI_Tab_A.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BorrowedBooks\BB_Set_Main.xsc">
+      <DependentUpon>BB_Set_Main.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\BorrowedBooks\BB_Set_Main.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BB_Set_Main.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\BorrowedBooks\BB_Set_Main.xss">
+      <DependentUpon>BB_Set_Main.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Graph\CLB_Set_Graph.xsc">
+      <DependentUpon>CLB_Set_Graph.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Graph\CLB_Set_Graph.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLB_Set_Graph.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ClientLogbook\Graph\CLB_Set_Graph.xss">
+      <DependentUpon>CLB_Set_Graph.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Narrative\CLB_Set_Narrative.xsc">
+      <DependentUpon>CLB_Set_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Narrative\CLB_Set_Narrative.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLB_Set_Narrative.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ClientLogbook\Narrative\CLB_Set_Narrative.xss">
+      <DependentUpon>CLB_Set_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Tabular\CLB_Set_Tabular.xsc">
+      <DependentUpon>CLB_Set_Tabular.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Tabular\CLB_Set_Tabular.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLB_Set_Tabular.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ClientLogbook\Tabular\CLB_Set_Tabular.xss">
+      <DependentUpon>CLB_Set_Tabular.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Tabular_Narrative\CLB_Set_Tabular_Narrative.xsc">
+      <DependentUpon>CLB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ClientLogbook\Tabular_Narrative\CLB_Set_Tabular_Narrative.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLB_Set_Tabular_Narrative.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ClientLogbook\Tabular_Narrative\CLB_Set_Tabular_Narrative.xss">
+      <DependentUpon>CLB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Narrative\MBB_Set_Narrative.xsc">
+      <DependentUpon>MBB_Set_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Narrative\MBB_Set_Narrative.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MBB_Set_Narrative.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Narrative\MBB_Set_Narrative.xss">
+      <DependentUpon>MBB_Set_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Tabular\MBB_Set_Tabular.xsc">
+      <DependentUpon>MBB_Set_Tabular.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Tabular\MBB_Set_Tabular.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MBB_Set_Tabular.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Tabular\MBB_Set_Tabular.xss">
+      <DependentUpon>MBB_Set_Tabular.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Set_Tabular_Narrative.xsc">
+      <DependentUpon>MBB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Set_Tabular_Narrative.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MBB_Set_Tabular_Narrative.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MemberBorrowedBooks\Tabular_Narrative\MBB_Set_Tabular_Narrative.xss">
+      <DependentUpon>MBB_Set_Tabular_Narrative.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Date\BaseSet.xsc">
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Date\BaseSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Date\BaseSet.xss">
+      <DependentUpon>BaseSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Graph\Month\MF_Set_Graph_Month.xsc">
+      <DependentUpon>MF_Set_Graph_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Graph\Month\MF_Set_Graph_Month.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Graph_Month.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Graph\Month\MF_Set_Graph_Month.xss">
+      <DependentUpon>MF_Set_Graph_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Graph\Year\MF_Set_Graph_Year.xsc">
+      <DependentUpon>MF_Set_Graph_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Graph\Year\MF_Set_Graph_Year.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Graph_Year.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Graph\Year\MF_Set_Graph_Year.xss">
+      <DependentUpon>MF_Set_Graph_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Narrative\Month\MF_Set_Narrative_Month.xsc">
+      <DependentUpon>MF_Set_Narrative_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Narrative\Month\MF_Set_Narrative_Month.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Narrative_Month.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Narrative\Month\MF_Set_Narrative_Month.xss">
+      <DependentUpon>MF_Set_Narrative_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Narrative\Year\MF_Set_Narrative_Year.xsc">
+      <DependentUpon>MF_Set_Narrative_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Narrative\Year\MF_Set_Narrative_Year.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Narrative_Year.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Narrative\Year\MF_Set_Narrative_Year.xss">
+      <DependentUpon>MF_Set_Narrative_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular\Month\MF_Set_Tabular_Month.xsc">
+      <DependentUpon>MF_Set_Tabular_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular\Month\MF_Set_Tabular_Month.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Tabular_Month.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular\Month\MF_Set_Tabular_Month.xss">
+      <DependentUpon>MF_Set_Tabular_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular\Year\MF_Set_Tabular_Year.xsc">
+      <DependentUpon>MF_Set_Tabular_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular\Year\MF_Set_Tabular_Year.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Tabular_Year.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular\Year\MF_Set_Tabular_Year.xss">
+      <DependentUpon>MF_Set_Tabular_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Set_Tabular_Narrative_Month.xsc">
+      <DependentUpon>MF_Set_Tabular_Narrative_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Set_Tabular_Narrative_Month.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Tabular_Narrative_Month.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular_Narrative\Month\MF_Set_Tabular_Narrative_Month.xss">
+      <DependentUpon>MF_Set_Tabular_Narrative_Month.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular_Narrative\Year\MF_Set_Tabular_Narrative_Year.xsc">
+      <DependentUpon>MF_Set_Tabular_Narrative_Year.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular_Narrative\Year\MF_Set_Tabular_Narrative_Year.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MF_Set_Tabular_Narrative_Year.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MembershipFrequency\Tabular_Narrative\Year\MF_Set_Tabular_Narrative_Year.xss">
+      <DependentUpon>MF_Set_Tabular_Narrative_Year.xsd</DependentUpon>
+    </None>
     <None Include="Reports\Set_Reports.xsc">
       <DependentUpon>Set_Reports.xsd</DependentUpon>
     </None>
